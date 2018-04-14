@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="http://placehold.it/150x100" alt="">
+      </a>
+      <button class="page-header__toggle" type="button">Открыть меню</button>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="index.html">Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+          <li class="site-list__item site-list__item--active"><a>Конкурс</a></li>
+          <li class="site-list__item"><a href="#">Html Academy</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main__forma">
+      <article class="competition">
+        <p class="competition__text">Конкурс на самое безбашенное путешествие с Пинк</p>
+        <p class="competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните</p>
+      </article>
+      <section class="page-forma">
+        <form class="page-forma__block" action="https://echo.htmlacademy.ru"  method="post">
+          <fieldset class="forma-name">
+              <div class="forma-name__wrapper">
+                <ul class="forma-name__list">
+                  <li class="forma-name__item">
+                    <label class="forma-name__label" for="surname">Фамилия:
+                    </label>
+                    <input class="forma-name__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
+                  </li>
+                  <li class="forma-name__item">
+                    <label class="forma-name__label" for="name">Имя:</label>
+                    <input class="forma-name__input" type="text" id="name" name="name" placeholder="Введите ваше имя*">
+                  </li>
+                  <li class="forma-name__item">
+                    <label class="forma-name__label" for="patronymic">Отчество:</label>
+                    <input  class="forma-name__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="progress-forma">
+              <div class="progress-forma__wrapper">
+                <legend class="progress-forma__legend">Ваши безбашенные достижения в путешествии</legend>
+                <ul class="progress-forma__list">
+                  <li class="progress-forma__item">
+                    <input class="progress-forma__input" type="checkbox" id="shark" name="shark" checked>
+                    <label class="progress-forma__label" for="shark">Сделал селфи с акулой</label>
+                  </li>
+                  <li class="progress-forma__item">
+                    <input class="progress-forma__input" type="checkbox" id="beach" name="beach" checked>
+                    <label class="progress-forma__label" for="beach">Обгорел на пляже</label>
+                  </li>
+                  <li class="progress-forma__item">
+                    <input class="progress-forma__input" type="checkbox" id="chuck-norris" name="chuck-norris">
+                    <label class="progress-forma__label" for="chuck-norris">Видел Чака Норриса</label>
+                  </li>
+                  <li class="progress-forma__item">
+                    <input class="progress-forma__input" type="checkbox" id="souvenir" name="souvenir">
+                    <label class="progress-forma__label" for="souvenir">Накупил сувениров</label>
+                  </li>
+                  <li class="progress-forma__item">
+                    <input class="progress-forma__input" type="checkbox" id="turret" name="turret" checked>
+                    <label class="progress-forma__label" for="turret">Удержал башню</label>
+                  </li>
+                  <li class="progress-forma__item">
+                    <input class="progress-forma__input" type="checkbox" id="hotel" name="hotel">
+                    <label class="progress-forma__label" for="hotel">Разгромил отель</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="contacts-forma">
+              <div class="contacts-forma__wrapper">
+                <ul class="contacts-forma__list">
+                  <li class="contacts-forma__item">
+                    <label  class="contacts-forma__label" for="phone">Номер телефона:</label>
+                    <input class="contacts-forma__input" type="tel" id="phone" name="phone" placeholder="Номер,пожалуйста">
+                  </li>
+                  <li>
+                    <label class="contacts-forma__label" for="mail">Адрес почты:</label>
+                    <input class="contacts-forma__input" type="email" id="mail" name="mail" placeholder="Введите почту *">
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="application-forma">
+              <div class="application-forma__wrapper">
+                <legend class="application-forma__legend">С каким приложением путешествовали?</legend>
+                <ul class="application-forma__list">
+                  <li class="application-forma__item">
+                    <input class="application-forma__input" type="radio" id="ios" name="ios" checked>
+                    <label class="application-forma__label" for="ios">Pink для iOS</label>
+                  </li>
+                  <li>
+                    <input class="application-forma__input" type="radio" id="android" name="android">
+                    <label class="application-forma__label" for="android">Pink на Android</label>
+                  </li>
+                  <li>
+                    <input class="application-forma__input" type="radio" id="windows" name="windows">
+                    <label class="application-forma__label" for="windows">Windows Phone</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="emotions-forma">
+              <div class="emotions-forma__wrapper">
+                <legend class="emotions-forma__legend">Опишите свои эмоции</legend>
+                <textarea class="emotions-forma__textarea" name="" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                <button class="emotions-forma__button" type="submit">Отправить форму</button>
+                <p class="emotions-forma__text">*-обязательные поля</p>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <div class="page-footer__item">
+          <img class="page-header__glasses" src="http://placehold.it/150x100" alt="">
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <img  class="page-footer__pink" src="http://placehold.it/150x100" alt="">
+          </a>
+        </div>
+        <div class="page-footer__social">
+          <a class="page-footer__social--tv social-btn" href="#" aria-label="twitter"><span class="visually-hidden">twitter</span></a>
+          <a class="page-footer__social--fb social-btn" href="#" aria-label="facebook"><span class="visually-hidden">facebook</span></a>
+          <a class="page-footer__social--yo social-btn" href="#" aria-label="youtube"><span class="visually-hidden">youtube</span></a>
+        </div>
+        <div class="page-footer__block">
+          <span class="page-footer__span">Разработано</span>
+          <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="http://placehold.it/150x100" alt="">
+          </a>
+        </div>
+      </footer>
+
