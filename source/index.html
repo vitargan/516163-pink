@@ -13,7 +13,7 @@
       <nav class="main-nav">
         <h2 class="visually-hidden">Меню сайта</h2>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="#">Главная</a></li>
+          <li class="site-list__item site-list--active">Главная</li>
           <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
           <li class="site-list__item"><a href="form.html">Конкурс</a></li>
           <li class="site-list__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
@@ -50,19 +50,19 @@
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <div class="advantages-block">
-          <p class="advantages-block__text">Устали от серости мегаполиса?</p>
-          <p class="advantages-block__text">Нам есть, что вам предложить!</p>
+          <p class="advantages__text">Устали от серости мегаполиса?</p>
+          <p class="advantages__text">Нам есть, что вам предложить!</p>
         </div>
         <ul class="advantages-list">
-          <li class="advantages__item list-mood">
+          <li class="advantages__item advantages--mood">
             <h3 class="advantages__title">Поднимает настроение</h3>
             <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
-          <li class="advantages__item list-world">
+          <li class="advantages__item advantages--world">
             <h3 class="advantages__title ">Меняет мир вокруг</h3>
             <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
-          <li class="advantages__item list-friend">
+          <li class="advantages__item advantages--friend">
             <h3 class="advantages__title">Заводит новых друзей</h3>
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
@@ -74,20 +74,20 @@
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__wrapper slider">
-          <div class="reviews-item  slider__item">
+          <div class="reviews-item">
             <h2 class="reviews__title">Николай Петров</h2>
             <p class="reviews__author">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
-          <div class="reviews-item  slider__item">
+          <div class="reviews-item">
             <h2 class="reviews__title">Николай Петров</h2>
             <p class="reviews__author">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
-          <div class="reviews-item  slider__item">
+          <div class="reviews-item">
             <h2 class="reviews__title">Николай Петров</h2>
             <p class="reviews__author">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
         </div>
-        <p class="reviews__toggles slider__toggles">
+        <p class="reviews__toggles">
           <button class="slider__toggle" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
@@ -98,82 +98,81 @@
         <div class="tariff__wrapper slider">
           <div class="tariff-slider">
             <ul class="tariff-slider__list">
-              <li class="tariff__list">Стандарт</li>
-              <li class="tariff__list">3,99 USD</li>
+              <li class="tariff-slider__item">Стандарт</li>
+              <li class="tariff-slider__item">3,99 USD</li>
             </ul>
             <table class="table-slider">
-              <tr class="tariff-table__item">
-                <td class="tariff-table__cell">Розовый фильтр</td>
-                <td class="tariff-table__cell">
+              <tr class="ttable-slider__item">
+                <td class="table-slider__cell">Розовый фильтр</td>
+                <td class="table-slider__cell">
                 <img src="http://placehold.it/25x25" alt="">
                 </td>
               </tr>
-              <tr class="tariff-table__item">
-                <td class="tariff-table__cell">Смайлики</td>
-                <td class="tariff-table__cell">
+              <tr class="table-slider__item">
+                <td class="table-slider__cell">Смайлики</td>
+                <td class="table-slider__cell">
                 <img src="http://placehold.it/25x25" alt="">
                 </td>
               </tr>
-              <tr class="tariff-table__item">
-                <td class="tariff-table__cell">Комментарии</td>
-                <td class="tariff-table__cell">
+              <tr class="table-slider__item">
+                <td class="table-slider__cell">Комментарии</td>
+                <td class="table-slider__cell">
                 <img src="http://placehold.it/25x25" alt=""></td>
               </tr>
             </table>
           </div>
           <div class="tariff-slider">
             <ul class="tariff-slider__list">
-              <li class="tariff__list">Стандарт</li>
-              <li class="tariff__list">3,99 USD</li>
+              <li class="tariff-slider__item">Стандарт</li>
+              <li class="tariff-slider__item">3,99 USD</li>
             </ul>
             <table class="table-slider">
-              <tr class="tariff-table__item">
-                <td class="tariff-table__cell">Розовый фильтр</td>
-                <td class="tariff-table__cell">
+              <tr class="ttable-slider__item">
+                <td class="table-slider__cell">Розовый фильтр</td>
+                <td class="table-slider__cell">
                 <img src="http://placehold.it/25x25" alt="">
                 </td>
               </tr>
-              <tr class="tariff-table__item">
-                <td class="tariff-table__cell">Смайлики</td>
-                <td class="tariff-table__cell">
+              <tr class="table-slider__item">
+                <td class="table-slider__cell">Смайлики</td>
+                <td class="table-slider__cell">
                 <img src="http://placehold.it/25x25" alt="">
                 </td>
               </tr>
-              <tr class="tariff-table__item">
-                <td class="tariff-table__cell">Комментарии</td>
-                <td class="tariff-table__cell">
+              <tr class="table-slider__item">
+                <td class="table-slider__cell">Комментарии</td>
+                <td class="table-slider__cell">
                 <img src="http://placehold.it/25x25" alt=""></td>
               </tr>
             </table>
           </div>
           <div class="tariff-slider">
             <ul class="tariff-slider__list">
-              <li class="tariff__list">Стандарт</li>
-              <li class="tariff__list">3,99 USD</li>
+              <li class="tariff-slider__item">Стандарт</li>
+              <li class="tariff-slider__item">3,99 USD</li>
             </ul>
             <table class="table-slider">
-              <tr class="tariff-table__item">
-                  <td class="tariff-table__cell">Розовый фильтр</td>
-                <td class="tariff-table__cell">
+              <tr class="ttable-slider__item">
+                <td class="table-slider__cell">Розовый фильтр</td>
+                <td class="table-slider__cell">
                 <img src="http://placehold.it/25x25" alt="">
                 </td>
               </tr>
-              <tr class="tariff-table__item">
-                <td class="tariff-table__cell">Смайлики</td>
-                <td class="tariff-table__cell">
+              <tr class="table-slider__item">
+                <td class="table-slider__cell">Смайлики</td>
+                <td class="table-slider__cell">
                 <img src="http://placehold.it/25x25" alt="">
-                  </td>
+                </td>
               </tr>
-              <tr class="tariff-table__item">
-                <td class="tariff-table__cell">Комментарии</td>
-                <td class="tariff-table__cell">
-                <img src="http://placehold.it/25x25" alt="">
-              </td>
+              <tr class="table-slider__item">
+                <td class="table-slider__cell">Комментарии</td>
+                <td class="table-slider__cell">
+                <img src="http://placehold.it/25x25" alt=""></td>
               </tr>
             </table>
           </div>
         </div>
-        <p class="tariff__toggles slider__toggles">
+        <p class="tariff__toggles">
           <button class="slider__toggle" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
