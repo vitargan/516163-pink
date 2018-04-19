@@ -15,11 +15,12 @@
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a href="index.html">Главная</a></li>
           <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-          <li class="site-list__item site-list--active">Конкурс</li>
+          <li class="site-list__item site-list__item--active">Конкурс</li>
           <li class="site-list__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
         </ul>
       </nav>
     </header>
+    <h1 class="visually-hidden">Приложение лучшей соцсети в мире!!!</h1>
 
     <main class="page-main">
       <section class="competition">
@@ -28,9 +29,9 @@
       </section>
       <section class="page-form">
         <h2 class="visually-hidden">Поделитесь историей</h2>
-        <form class="form-block" action="https://echo.htmlacademy.ru"  method="post">
-          <div class="form__wrapper">
-            <fieldset class="form">
+        <form class="form" action="https://echo.htmlacademy.ru"  method="post">
+
+            <fieldset class="form__block">
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__label" for="surname">Фамилия:
@@ -47,112 +48,112 @@
                 </li>
               </ul>
             </fieldset>
-          </div>
-          <div class="progress-form__wrapper">
-            <fieldset class="progress-form">
-              <legend class="progress__legend">Ваши безбашенные достижения в путешествии</legend>
-              <ul class="progress__list">
-                <li class="progress__item">
-                  <input class="progress__input" type="checkbox" id="shark" name="shark" checked>
-                  <label class="progress__label" for="shark">Сделал селфи с акулой</label>
+
+
+            <fieldset class="form__progress">
+              <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="form__list">
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="shark" name="shark" checked>
+                  <label class="form__label" for="shark">Сделал селфи с акулой</label>
                 </li>
-                <li class="progress__item">
-                  <input class="progress__input" type="checkbox" id="beach" name="beach" checked>
-                  <label class="progress__label" for="beach">Обгорел на пляже</label>
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="beach" name="beach" checked>
+                  <label class="form__label" for="beach">Обгорел на пляже</label>
                 </li>
-                <li class="progress__item">
-                  <input class="progress__input" type="checkbox" id="chuck-norris" name="chuck-norris">
-                  <label class="progress__label" for="chuck-norris">Видел Чака Норриса</label>
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="chuck-norris" name="chuck-norris">
+                  <label class="form__label" for="chuck-norris">Видел Чака Норриса</label>
                 </li>
-                <li class="progress__item">
-                  <input class="progress__input" type="checkbox" id="souvenir" name="souvenir">
-                  <label class="progress__label" for="souvenir">Накупил сувениров</label>
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="souvenir" name="souvenir">
+                  <label class="form__label" for="souvenir">Накупил сувениров</label>
                 </li>
-                  <li class="progress__item">
-                  <input class="progress__input" type="checkbox" id="turret" name="turret" checked>
-                  <label class="progress__label" for="turret">Удержал башню</label>
+                  <li class="form__item">
+                  <input class="form__input" type="checkbox" id="turret" name="turret" checked>
+                  <label class="form__label" for="turret">Удержал башню</label>
                 </li>
-                <li class="progress__item">
-                  <input class="progress__input" type="checkbox" id="hotel" name="hotel">
-                  <label class="progress__label" for="hotel">Разгромил отель</label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="contacts-form__wrapper">
-            <fieldset class="contacts-form">
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <label  class="contacts__label" for="phone">Номер телефона:</label>
-                  <input class="contacts__input" type="tel" id="phone" name="phone" placeholder="Номер,пожалуйста">
-                </li>
-                <li>
-                  <label class="contacts__label" for="mail">Адрес почты:</label>
-                  <input class="contacts__input" type="email" id="mail" name="mail" placeholder="Введите почту *">
+                <li class="form__item">
+                  <input class="form__input" type="checkbox" id="hotel" name="hotel">
+                  <label class="form__label" for="hotel">Разгромил отель</label>
                 </li>
               </ul>
             </fieldset>
-          </div>
-          <div class="application-form__wrapper">
-            <fieldset class="application-form">
-              <legend class="application__legend">С каким приложением путешествовали?</legend>
-              <ul class="application__list">
-                <li class="application__item">
-                  <input class="application__input" type="radio" id="ios" name="ios" checked>
-                  <label class="application__label" for="ios">Pink для iOS</label>
+
+
+            <fieldset class="form__contacts">
+              <ul class="form__list">
+                <li class="form__item">
+                  <label  class="form__label" for="phone">Номер телефона:</label>
+                  <input class="form__input" type="tel" id="phone" name="phone" placeholder="Номер,пожалуйста">
                 </li>
                 <li>
-                  <input class="application__input" type="radio" id="android" name="android">
-                  <label class="application__label" for="android">Pink на Android</label>
-                </li>
-                <li>
-                  <input class="application__input" type="radio" id="windows" name="windows">
-                  <label class="application__label" for="windows">Windows Phone</label>
+                  <label class="form__label" for="mail">Адрес почты:</label>
+                  <input class="form__input" type="email" id="mail" name="mail" placeholder="Введите почту *">
                 </li>
               </ul>
             </fieldset>
-          </div>
-          <div class="emotions-form__wrapper">
-            <fieldset class="emotions-form">
-              <label class="emotions__legend" for="emotions">Опишите свои эмоции</label>
-              <textarea class="emotions__textarea" name="emotions" id="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-              <button class="emotions__button" type="submit">Отправить форму</button>
-              <p class="emotions__text">*-обязательные поля</p>
+
+
+            <fieldset class="form__application">
+              <legend class="form__legend">С каким приложением путешествовали?</legend>
+              <ul class="form__list">
+                <li class="form__item">
+                  <input class="form__input" type="radio" id="ios" name="ios" checked>
+                  <label class="form__label" for="ios">Pink для iOS</label>
+                </li>
+                <li>
+                  <input class="form__input" type="radio" id="android" name="android">
+                  <label class="form__label" for="android">Pink на Android</label>
+                </li>
+                <li>
+                  <input class="form__input" type="radio" id="windows" name="windows">
+                  <label class="form__label" for="windows">Windows Phone</label>
+                </li>
+              </ul>
             </fieldset>
-          </div>
+
+
+            <fieldset class="form-emotions">
+              <label class="form__legend" for="emotions">Опишите свои эмоции</label>
+              <textarea class="form__textarea" name="emotions" id="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <button class="form__button" type="submit">Отправить форму</button>
+              <p class="form__text">*-обязательные поля</p>
+            </fieldset>
+
         </form>
       </section>
     </main>
 
     <footer class="page-footer">
       <h2 class="visually-hidden">Ссылки на социальные сети</h2>
-      <div class="footer-img">
-        <img class="footer__glasses" src="http://placehold.it/150x100" alt=""><a href="https://htmlacademy.ru/intensive/adaptive">
-          <img  class="footer__pink" src="http://placehold.it/150x100" alt="">
+      <div class="page-footer__img">
+        <img class="page-footer__glasses" src="http://placehold.it/150x100" alt=""><a href="https://htmlacademy.ru/intensive/adaptive">
+          <img  class="page-footer__pink" src="http://placehold.it/150x100" alt="">
         </a>
       </div>
-      <div class="footer-social">
-        <a class="footer__btn footer-social--tv" href="#" aria-label="twitter"><span class="visually-hidden">twitter</span></a>
-        <a class="footer__btn footer-social--fb " href="#" aria-label="facebook"><span class="visually-hidden">facebook</span></a>
-        <a class="footer__btn footer-social--yo" href="#" aria-label="youtube"><span class="visually-hidden">youtube</span></a>
+      <div class="page-footer__social">
+        <a class="page-footer__btn page-footer__btn--tv" href="#" aria-label="twitter"><span class="visually-hidden">twitter</span></a>
+        <a class="page-footer__btn page-footer__btn--fb " href="#" aria-label="facebook"><span class="visually-hidden">facebook</span></a>
+        <a class="page-footer__btn page-footer__btn--yo" href="#" aria-label="youtube"><span class="visually-hidden">youtube</span></a>
       </div>
-      <div class="footer-block">
-        <span class="footer__span">Разработано</span>
-        <a class="footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+      <div class="page-footer__list">
+        <span class="page-footer__span">Разработано</span>
+        <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
           <img src="http://placehold.it/150x100" alt="">
         </a>
       </div>
     </footer>
 
     <section class="error-text visually-hidden">
-        <h3 class="error__title">Что-то пошло не так!</h3>
-        <p class="error__text">Проверьте поля, выделенные красным,<br> скорее всего вы забыли их заполнить</p>
-        <button class="error__button" type="button">ок</button>
-      </section>
+      <h3 class="error-text__title">Что-то пошло не так!</h3>
+      <p class="error-text__text">Проверьте поля, выделенные красным,<br> скорее всего вы забыли их заполнить</p>
+      <button class="error-text__button" type="button">ок</button>
+    </section>
 
-      <section class="form-sent visually-hidden">
-        <h3 class="form__title">Ваша заявка отправлена</h3>
-        <p class="form__text">Спасибо за ваше участие, ваша заявка уже поступила к нам.В ближайшее время мы рассмотрим ее и оповестим вас.
-        </p>
-        <button class="form__button" type="button">Закрыть окно</button>
-      </section>
+    <section class="form-sent visually-hidden">
+      <h3 class="form-sent__title">Ваша заявка отправлена</h3>
+      <p class="form-sent__text">Спасибо за ваше участие, ваша заявка уже поступила к нам.В ближайшее время мы рассмотрим ее и оповестим вас.
+      </p>
+      <button class="form-sent__button" type="button">Закрыть окно</button>
+    </section>
