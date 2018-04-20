@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img src="http://placehold.it/150x100" alt="">
       </a>
       <button class="page-header__toggle" type="button">Открыть меню</button>
@@ -15,13 +15,12 @@
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a href="index.html">Главная</a></li>
           <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-          <li class="site-list__item site-list__item--active">Конкурс</li>
+          <li class="site-list__item site-list__item--active"><a>Конкурс</a></li>
           <li class="site-list__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
         </ul>
       </nav>
     </header>
     <h1 class="visually-hidden">Приложение лучшей соцсети в мире!!!</h1>
-
     <main class="page-main">
       <section class="competition">
         <p class="competition__text">Конкурс на самое безбашенное путешествие с Пинк</p>
@@ -30,7 +29,6 @@
       <section class="page-form">
         <h2 class="visually-hidden">Поделитесь историей</h2>
         <form class="form" action="https://echo.htmlacademy.ru"  method="post">
-
             <fieldset class="form__block">
               <ul class="form__list">
                 <li class="form__item">
@@ -48,9 +46,7 @@
                 </li>
               </ul>
             </fieldset>
-
-
-            <fieldset class="form__progress">
+            <fieldset class="form__block">
               <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
               <ul class="form__list">
                 <li class="form__item">
@@ -79,9 +75,7 @@
                 </li>
               </ul>
             </fieldset>
-
-
-            <fieldset class="form__contacts">
+            <fieldset class="fform__block">
               <ul class="form__list">
                 <li class="form__item">
                   <label  class="form__label" for="phone">Номер телефона:</label>
@@ -93,9 +87,7 @@
                 </li>
               </ul>
             </fieldset>
-
-
-            <fieldset class="form__application">
+            <fieldset class="form__block">
               <legend class="form__legend">С каким приложением путешествовали?</legend>
               <ul class="form__list">
                 <li class="form__item">
@@ -112,16 +104,13 @@
                 </li>
               </ul>
             </fieldset>
-
-
-            <fieldset class="form-emotions">
+            <fieldset class="form__block">
               <label class="form__legend" for="emotions">Опишите свои эмоции</label>
               <textarea class="form__textarea" name="emotions" id="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               <button class="form__button" type="submit">Отправить форму</button>
               <p class="form__text">*-обязательные поля</p>
             </fieldset>
-
-        </form>
+          </form>
       </section>
     </main>
 
