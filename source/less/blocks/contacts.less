@@ -1,6 +1,14 @@
 .contacts__item {
   list-style: none;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.contacts {
+  padding: 0;
+  margin: 0;
 }
 
 .contacts__text {
@@ -27,4 +35,70 @@
   font-weight: 300;
   color: @color-footer;
   text-align: center;
+  margin: 0;
+}
+
+.contacts--list {
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__item {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    padding-left: 180px;
+  }
+
+  .contacts__text {
+    font-size: 40px;
+    line-heigh: 50px;
+  }
+
+  .contacts__block {
+    flex-direction: column;
+    width: 270px;
+  }
+
+  .contacts__block:nth-child(1) {
+    margin-right: 40px;
+  }
+
+  .contacts--list {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    min-height: 100px;
+    list-style: none;
+    margin: 0;
+    margin-left: 30px;
+  }
+
+  .contacts__item--text {
+    width: 450px;
+    padding-left: 90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__text {
+    font-size: 50px;
+    line-heigh: 60px;
+  }
+
+  .contacts__item--text {
+    width: 550px;
+    padding: 0;
+    margin-left: 300px;
+  }
+
+  .contacts--wrapper {
+    display: flex;
+    width: 940px;
+    margin-left: 150px;
+  }
+
+  .contacts__item {
+    padding: 0;
+  }
 }

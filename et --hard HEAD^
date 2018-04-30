@@ -1,0 +1,31 @@
+[33mcommit 8fcce4ca1cb604a4f2fe536b20b721d03c173b27[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: vitargan <36110701+vitargan@users.noreply.github.com>
+Date:   Sun Apr 22 22:47:00 2018 +0300
+
+    иправил замечания трэвиса
+
+[33mcommit b03b57c128c44ebc8d73a9de432bbe74b92dc22f[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 0b7ab39 96b0783
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Fri Apr 20 21:04:39 2018 +0300
+
+    Merge pull request #2 from vitargan/module2-task1
+
+[33mcommit 96b078315a532644fcd26aa9a3dadb01247746ca[m[33m ([m[1;31morigin/module2-task1[m[33m, [m[1;32mmodule2-task1[m[33m)[m
+Author: vitargan <36110701+vitargan@users.noreply.github.com>
+Date:   Fri Apr 20 21:01:03 2018 +0300
+
+    исправил
+
+[33mcommit 8ea4b0d55f132d3807aff8726e77264797613cfa[m
+Merge: ab52c8a 0b7ab39
+Author: Denis <baidarovden@gmail.com>
+Date:   Fri Apr 20 20:45:16 2018 +0300
+
+    Merge branch 'master' into module2-task1
+
+[33mcommit ab52c8af60c1dec1b4e9a7de62ac3355fb27acbf[m
+Author: vitargan <36110701+vitargan@users.noreply.github.com>
+Date:   Fri Apr 20 20:26:18 2018 +0300
+
+    исправил недочеты в разметке

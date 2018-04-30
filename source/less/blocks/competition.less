@@ -27,3 +27,57 @@
   color: @color-competition__text2;
   margin-top: 45px;
 }
+
+.competition__span {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .competition {
+    width: @tablet-width;
+    min-height: 550px;
+  }
+
+  .competition__text:nth-child(1) {
+    height: 329px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .competition__text:nth-child(2) {
+    height: 235px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .competition__span {
+    display: inline;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: normal;
+    text-align: center;
+    color: @color-competition__text2;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .competition {
+    width: @desktop-width;
+    min-height: 485px;
+  }
+
+  .competition__text:nth-child(1) {
+    height: 284px;
+  }
+
+  .competition__text:nth-child(2) {
+    height: 200px;
+    width: 730px;
+    padding: 0;
+    margin-left: 225px;
+  }
+}

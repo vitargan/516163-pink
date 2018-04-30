@@ -25,5 +25,53 @@
   text-align: center;
   color: @color-competition__text2;
   padding-top: 50px;
+  margin: 0;
   box-sizing: border-box;
+}
+
+.user-photo__block {
+  background: @background-footer;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .user-photo {
+    width: @tablet-width;
+    min-height: 556px;
+  }
+
+  .user-photo__list {
+    height: 333px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .user-photo__text {
+    height: 228px;
+    width: 500px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 75px;
+  }
+
+  .user-photo__br {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-photo {
+    width: @desktop-width;
+    min-height: 523px;
+  }
+
+  .user-photo__list {
+    height: 284px;
+  }
+
+  .user-photo__text {
+    height: 241px;
+    width: 600px;
+    margin-left: 315px;
+  }
 }

@@ -3,6 +3,9 @@
   width: @mobail-width;
   border: 2px solid red;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .advantages__block {
@@ -24,6 +27,7 @@
 .advantages__list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .advantages__title {
@@ -41,4 +45,120 @@
   color: @color-advantages__description;
   margin: 0;
   margin-top: 20px;
+}
+
+.advantages__effect {
+  display: none;
+  background: @background-advantages-block;
+  min-height: 400px;
+}
+
+.advantages__time {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.advantages__link {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  text-decoration: underline;
+  color: @color-footer;
+}
+
+.advantages__br {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    min-height: 1280px;
+    width: @tablet-width;
+  }
+
+  .advantages__effect {
+    display: flex;
+  }
+
+  .advantages__mobil {
+    display: none;
+  }
+
+  .advantages__list {
+    min-height: 500px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 300px;
+    text-align: left;
+  }
+
+  .advantages__research {
+    width: 280px;
+    padding: 0;
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding-top: 95px;
+    margin-left: 150px;
+    box-sizing: border-box;
+  }
+
+  .advantages__br {
+    display: block;
+  }
+
+  .advantages__item {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    min-height: 1362px;
+    width: @desktop-width;
+  }
+
+  .advantages__research {
+    margin: 0;
+    padding: 0;
+    margin-left: 500px;
+  }
+
+  .advantages__effect {
+    display: block;
+    background: @background-effect-desktop;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 1000px;
+    height: 500px;
+    padding: 0;
+    padding-left: 230px;
+  }
+
+  .advantages__img {
+    display: none;
+  }
+
+  .advantages__mobil {
+    display: block;
+  }
+
+  .advantages__br {
+    display: block;
+  }
+
+  .advantages__item {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+  }
 }

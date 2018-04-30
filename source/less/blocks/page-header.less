@@ -1,6 +1,39 @@
 .page-header {
   background: @background-header;
-  min-height: 325px;
+  min-height: 463px;
   width: @mobail-width;
-  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header__block {
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: @tablet-width;
+    min-height: 326px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: @desktop-width;
+    min-height: 110px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__block {
+    width: 300px;
+  }
 }

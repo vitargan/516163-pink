@@ -4,8 +4,10 @@
   width: @mobail-width;
   margin: 0;
   padding: 0;
-  text-align: center;
   border: 2px solid red;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .download-app__btn {
@@ -28,6 +30,44 @@
 .download-app__text {
   font-size: 14px;
   line-height: 24px;
-  font-weight: light;
+  font-weight: 300;
   color: @download-app__text;
+}
+
+.download-app__slogan {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 300;
+  color: @color-competition__text;
+  display: none;
+}
+
+.advantages__mobil {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .download-app {
+    width: @tablet-width;
+    min-height: 617px;
+    background-color: @background-download-app;
+    padding-right: 300px;
+    box-sizing: border-box;
+  }
+
+  .download-app__slogan {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download-app {
+    width: @desktop-width;
+    min-height: 740px;
+    flex-direction: column;
+  }
+
+  .download-app__slogan {
+    display: block;
+  }
 }

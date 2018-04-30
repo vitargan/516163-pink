@@ -1,11 +1,28 @@
 .page-footer {
-  border: 2px solid red;
   background: @background-footer;
-  min-height: 612px;
   width: @mobail-width;
-  text-align: center;
 }
 
-.page-footer__list {
-  padding: 0;
+.page-footer--index {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    width: @tablet-width;
+    min-height: 128px;
+    background: @background-footer;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    width: @desktop-width;
+    min-height: 195px;
+    background: @background-footer;
+  }
 }

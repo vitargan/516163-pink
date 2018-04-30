@@ -3,14 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html" aria-label="ссылка на главную страницу">
-        <img src="http://placehold.it/150x100" alt="">
-      </a>
-      <button class="page-header__toggle" type="button">Открыть меню</button>
+      <div class="page-header__block">
+        <a class="page-header__logo" href="index.html" aria-label="ссылка на главную страницу">
+          <img src="http://placehold.it/150x100" alt="">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+      </div>
       <nav class="main-nav">
         <h2 class="visually-hidden">Меню сайта</h2>
         <ul class="main-nav__list site-list">
@@ -29,25 +35,26 @@
           <span class="user-photo__span">Фотографии<br> пользователей</span>
         </div>
         <div class="user-photo__block">
-          <p class="user-photo__text">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+          <p class="user-photo__text">Взгляните на фотографии, которые выкладывают пользователи!<br class="user-photo__br">Видите, как не хватает ваших?</p>
         </div>
       </section>
       <section class="photo">
-        <div class="photo__list">
-          <img class="photo__img" src="img/panorama-mobile@1x.jpg" width="280" height="180" alt="">
-          <div class="photo__block">
-            <b class="photo__name">Анна</b>
-            <span class="photo__span">(5 минут назад)</span>
-            <p class="photo__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <div class="photo__please">
-              <img class="photo__like" src="img/icon-heart.svg" alt="">
-              <span class="photo__text">Нравится: 215</span>
+        <div class="photo__list photo__list--hit">
+          <img class="photo__img photo__img--hit" src="img/panorama-mobile@1x.jpg" width="280" height="180" alt="">
+          <div class="photo__block photo__block--hit">
+            <b class="photo__name photo__name--hit">Анна</b>
+            <span class="photo__span photo__span--hit">(5 минут назад)</span>
+            <p class="photo__comment photo__comment--hit">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="photo__please photo__please--hit">
+              <img class="photo__like photo__like--hit" src="img/icon-heart.svg" alt="">
+              <span class="photo__text photo__text--hit">Нравится: 215</span>
             </div>
           </div>
         </div>
-        <div class="photo__list">
-          <img class="photo__img" src="img/photo-car-mobile@1x.jpg" alt="" width="280" height="180">
-          <div class="photo__block">
+        <div class="photo__wrapper">
+          <div class="photo__list">
+            <img class="photo__img" src="img/photo-car-mobile@1x.jpg" alt="" width="280" height="180">
+            <div class="photo__block">
             <b class="photo__name">Левон</b>
             <span class="photo__span">(5 часов назад)</span>
             <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -117,25 +124,32 @@
             </div>
           </div>
         </div>
+      </div>
       </section>
       <section class="sending-photo">
-        <p class="sending-photo__text">Затмите их всех!<br>Выкладывайте все, что накопилось в<br> телефоне!</p>
+        <p class="sending-photo__text">Затмите их всех!<br>Выкладывайте все, что накопилось в<br class="sending-photo__br"> телефоне!</p>
         <div class="sending-photo__filters">
           <img class="sending-photo__img" src="img/photo-road-mobile@1x.jpg" alt="" width="280" height="374">
-          <div class="sending-photo__list">
-            <div class="sending-photo__crop  sending-photo__crop--active" ><img src="http://placehold.it/150x100" alt=""></div>
-            <div class="sending-photo__fill"><img src="http://placehold.it/150x100" alt=""></div>
-            <div class="sending-photo__contrast"><img src="http://placehold.it/150x100" alt=""></div>
-            <div>
-              <div class="sending-photo__controls">
-                <div class="sending-photo__scale"></div>
-                <div class="sending-photo__toggle"></div>
+            <div class="sending-photo__wrapper">
+              <div class="sending-photo__list">
+                <div class="sending-photo__crop  sending-photo__crop--active" ><img src="http://placehold.it/150x100" alt=""></div>
+                <div class="sending-photo__fill"><img src="http://placehold.it/150x100" alt=""></div>
+                <div class="sending-photo__contrast"><img src="http://placehold.it/150x100" alt=""></div>
+                <div class="sending-photo__controls">
+                  <div class="sending-photo__scale"></div>
+                  <div class="sending-photo__toggle"></div>
+                  <div class="sending-photo__scale"></div>
+                  <div class="sending-photo__toggle"></div>
+                  <div class="sending-photo__scale"></div>
+                  <div class="sending-photo__toggle"></div>
+                </div>
+              </div>
+              <div class="sending-photo__battons">
+                <button class="sending-photo__button sending-photo__button--send" type="button">Запостить</button>
+                <button class="sending-photo__button sending-photo__button--cancellation" type="button">Отмена</button>
               </div>
             </div>
           </div>
-        </div>
-        <button class="sending-photo__button sending-photo__button--send" type="button">Запостить</button>
-        <button class="sending-photo__button sending-photo__button--cancellation" type="button">Отмена</button>
       </section>
     </main>
 

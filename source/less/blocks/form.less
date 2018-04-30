@@ -1,6 +1,12 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .form__label {
@@ -13,8 +19,9 @@
 }
 
 .form__block--text {
-  min-height: 370px;
   background: @background-form__block--text;
+  border: none;
+  min-height: 300px;
 }
 
 .form__input--text {
@@ -35,7 +42,7 @@
 }
 
 .form__block--checkbox {
-  min-height: 605px;
+  border: none;
 }
 
 .form__legend {
@@ -61,8 +68,8 @@
 }
 
 .form__block--link {
-  min-height: 285px;
   background: @background-form__block--text;
+  border: none;
 }
 
 .form__input--tel,
@@ -79,7 +86,7 @@
 }
 
 .form__block--radio {
-  min-height: 338px;
+  border: none;
 }
 
 .form__item--radio {
@@ -98,9 +105,10 @@
 .form__block--textarea {
   margin: 0;
   padding: 0;
-  min-height: 480px;
+  width: @mobail-width;
   background: @background-form__block--text;
   text-align: center;
+  border: none;
 }
 
 .form__textarea {
@@ -132,7 +140,7 @@
   padding-left: 15px;
 }
 
-.form__text {
+.form__obligatory {
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
@@ -141,4 +149,230 @@
 
 .form__span {
   color: @color-footer;
+}
+
+.form__legend--link {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    background: @background-footer;
+  }
+
+  .form__legend {
+    padding: 0;
+  }
+
+  .form__block {
+    padding: 0;
+  }
+
+  .form__input--text {
+    width: 100%;
+  }
+
+  .form__block--text {
+    order: 0;
+    border: none;
+  }
+
+  .form__item--text {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form__label {
+    padding-top: 15px;
+    margin: 0;
+  }
+
+  .form__block--radio {
+    order: 1;
+    border: 2px solid #e5e5e5;
+    background: @background-form__block--text;
+  }
+
+  .form__block--link {
+    order: 2;
+    border: 2px solid #e5e5e5;
+    padding: 0;
+    margin: 0;
+  }
+
+  .form__item--link {
+    margin: 0;
+  }
+
+  .form__list--link {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .form__block--textarea {
+    order: 5;
+    border: 2px solid #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form__textarea {
+    width: 500px;
+    height: 190px;
+    margin-left: 70px;
+  }
+
+  .form__block--checkbox {
+    order: 5;
+    border: 2px solid #e5e5e5;
+    background: @background-form__block--text;
+    display: flex;
+  }
+
+  .form__list {
+    margin-right: 50px;
+    padding: 0;
+  }
+
+  .form__wrapper--checkbox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__legend--link {
+    display: block;
+    padding: 0;
+  }
+
+  .form__text {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .form__br {
+    display: none;
+  }
+
+  .form__button {
+    margin-left: 20px;
+  }
+
+  .form__span {
+    margin-left: 200px;
+    margin-top: 67px;
+  }
+
+  .form__obligatory {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+    color: @form__label;
+  }
+
+  .form__input--tel,
+  .form__input--email {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__legend {
+    padding: 0;
+  }
+
+  .form__block--text {
+    width: 480px;
+    margin-left: 120px;
+    border: none;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__list {
+    padding: 0;
+  }
+
+  .form__block--radio {
+    width: 434px;
+  }
+
+  .form__item--link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__list--link:nth-last-child(2) {
+    padding-left: 60px;
+  }
+
+  .form__block--link {
+    width: 940px;
+    margin-left: 120px;
+    box-sizing: border-box;
+  }
+
+  .form__wrapper--link {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form__label--link {
+    order: 2;
+  }
+
+  .form__input--email {
+    order: 1;
+    width: 373px;
+  }
+
+  .form__input--tel {
+    order: 1;
+    width: 373px;
+    margin: 0;
+  }
+
+
+  .form__list--checkbox:nth-last-child(3) {
+    padding-left: 60px;
+  }
+
+  .form__block--checkbox {
+    width: 940px;
+    min-height: 230px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+  }
+
+  .form__wrapper--checkbox {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form__block--textarea {
+    width: 940px;
+    height: 370px;
+    margin-left: 120px;
+  }
+
+  .form__textarea {
+    width: 820px;
+    height: 125px;
+    margin-left: 70px;
+  }
+
+  .form__br {
+    display: none;
+  }
+
+  .form__text {
+    margin-left: 130px;
+  }
 }
