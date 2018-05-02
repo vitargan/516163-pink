@@ -23,6 +23,10 @@
   box-sizing: border-box;
 }
 
+.photo__list {
+  margin-bottom: 20px;
+}
+
 .photo__name {
   font-size: 14px;
   line-height: 24px;
@@ -76,10 +80,15 @@
   margin: 0;
 }
 
+.photo__hit {
+  min-height: 330px;
+  margin-bottom: 20px;
+}
+
 @media (min-width: @tablet-width) {
   .photo {
     width: @tablet-width;
-    min-height: 2000px;
+    min-height: 1500px;
   }
 
   .photo__list {
@@ -99,6 +108,11 @@
     height: 300px;
   }
 
+  .photo__hit {
+    min-height: 631px;
+    margin-bottom: 0;
+  }
+
   .photo__list--hit {
     min-height: 631px;
     width: 660px;
@@ -116,7 +130,7 @@
     min-height: 510px;
   }
 
-  .photo__wrapper {
+  .photo__wrapper--block {
     width: 660px;
     display: flex;
     flex-wrap: wrap;
@@ -134,7 +148,7 @@
 @media (min-width: @desktop-width) {
   .photo {
     width: @desktop-width;
-    min-height: 1817px;
+    min-height: 1266px;
   }
 
   .photo__list {
@@ -150,25 +164,32 @@
     height: 154px;
   }
 
+  .photo__hit {
+    width: 100%;
+    min-height: 604px;
+    margin-bottom: 0;
+  }
+
   .photo__list--hit {
     min-height: 604px;
-    width: 1200px;
+    width: 100%;
     margin-bottom: 104px;
   }
 
   .photo__block--hit {
     width: 940px;
-    margin-left: 130px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 27px;
     box-sizing: border-box;
   }
 
   .photo__img--hit {
-    width: 1200px;
+    width: 100%;
     min-height: 506px;
   }
 
-  .photo__wrapper {
+  .photo__wrapper--block {
     width: 960px;
     flex-wrap: wrap;
     margin-left: 110px;

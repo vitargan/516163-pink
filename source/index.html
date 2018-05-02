@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
+    <div class="wrapper wrapper__index">
     <header class="page-header">
+      <div class="page-header__wrapper">
       <div class="page-header__block">
         <a class="page-header__logo">
           <img src="http://placehold.it/150x100" alt="">
@@ -26,6 +28,7 @@
           <li class="site-list__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
         </ul>
       </nav>
+    </div>
     </header>
     <h1 class="visually-hidden">Приложение лучшей соцсети в мире!!!</h1>
     <main class="page-main">
@@ -61,6 +64,7 @@
           <p class="advantages__text">Устали от серости мегаполиса?</p>
           <p class="advantages__text">Нам есть, что вам<br class="advantages__br"> предложить!</p>
         </div>
+        <div class="advantages__wrapper">
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--mood">
             <img src="http://placehold.it/150x100" alt="" class="advantages__mobil">
@@ -78,12 +82,13 @@
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
+      </div>
         <div class="advantages__effect">
           <img class="advantages__img" src="http://placehold.it/150x100" alt="">
           <ul class="advantages__research">
             <li>
-              <h3 class="advantages__time">Эффект<br> на 24 часа!</h3>
-              <p class="advantages__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <h3 class="advantages__time">Эффект<br class="advantages__br advantages__br--time"> на 24 часа!</h3>
+              <p class="advantages__description advantages__description--time">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
               <a href="#" class="advantages__link">Узнать больше об исследовании</a>
             </li>
           </ul>
@@ -196,7 +201,7 @@
               </tr>
             </table>
             </div>
-            <div>
+            <div class="tariff__tablet">
               <table class="tariff__table__tablet">
                 <tr class="tariff__line">
                 <th class="tariff__list">
@@ -292,5 +297,6 @@
         </a>
       </div>
     </footer>
+    </div>
   </body>
 </html>

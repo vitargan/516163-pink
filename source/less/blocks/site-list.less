@@ -19,6 +19,10 @@
   border-bottom: 1px solid #000000;
 }
 
+.site-list__item:first-child {
+  border-top: 1px solid #000000;
+}
+
 @media (min-width: @desktop-width) {
   .site-list {
     flex-direction: row;
@@ -33,6 +37,10 @@
   .site-list a {
     box-shadow: none;
     display: flex;
+    border: none;
+  }
+
+  .site-list__item {
     border: none;
   }
 }

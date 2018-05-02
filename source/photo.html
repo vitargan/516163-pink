@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <div class="wrapper wrapper__top">
+      <header class="page-header">
+      <div class="page-header__wrapper">
       <div class="page-header__block">
         <a class="page-header__logo" href="index.html" aria-label="ссылка на главную страницу">
           <img src="http://placehold.it/150x100" alt="">
@@ -26,8 +28,10 @@
           <li class="site-list__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
         </ul>
       </nav>
+    </div>
     </header>
     <h1 class="visually-hidden">Приложение лучшей соцсети в мире!!!</h1>
+
     <main class="page-main">
       <h2 class="visually-hidden">Фотографии пользователей</h2>
       <section class="user-photo">
@@ -38,7 +42,7 @@
           <p class="user-photo__text">Взгляните на фотографии, которые выкладывают пользователи!<br class="user-photo__br">Видите, как не хватает ваших?</p>
         </div>
       </section>
-      <section class="photo">
+      <section class="photo photo__hit">
         <div class="photo__list photo__list--hit">
           <img class="photo__img photo__img--hit" src="img/panorama-mobile@1x.jpg" width="280" height="180" alt="">
           <div class="photo__block photo__block--hit">
@@ -51,82 +55,86 @@
             </div>
           </div>
         </div>
-        <div class="photo__wrapper">
-          <div class="photo__list">
-            <img class="photo__img" src="img/photo-car-mobile@1x.jpg" alt="" width="280" height="180">
-            <div class="photo__block">
-            <b class="photo__name">Левон</b>
-            <span class="photo__span">(5 часов назад)</span>
-            <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="photo__please">
-              <img class="photo__like" src="img/icon-heart.svg" alt="">
-              <span class="photo__text">Нравится: 356</span>
-            </div>
-          </div>
-        </div>
-        <div class="photo__list">
-          <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" alt="" width="280" height="180">
-          <div class="photo__block">
-            <b class="photo__name">Антон</b>
-            <span class="photo__span">(12 часов назад)</span>
-            <p class="photo__comment">Соседи будут рады!</p>
-            <div class="photo__please">
-              <img class="photo__like" src="img/icon-heart.svg" alt="">
-              <span class="photo__text">Нравится: 666</span>
-            </div>
-          </div>
-        </div>
-        <div class="photo__list">
-          <img class="photo__img" src="img/photo-window-mobile@1x.jpg" alt="" width="280" height="180">
-          <div class="photo__block">
-            <b class="photo__name">Борис</b>
-            <span class="photo__span">(20 часов назад)</span>
-            <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="photo__please">
-              <img class="photo__like" src="img/icon-heart.svg" alt="">
-              <span class="photo__text">Нравится: 215</span>
-            </div>
-          </div>
-        </div>
-        <div class="photo__list">
-          <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" alt=""  width="280" height="180">
-          <div class="photo__block">
-            <b class="photo__name">Сергей</b>
-            <span class="photo__span">(25 часов назад)</span>
-            <p class="photo__comment">Самая кубанская в мире!</p>
-            <div class="photo__please">
-              <img class="photo__like" src="img/icon-heart.svg" alt="">
-              <span class="photo__text">Нравится: 4</span>
-            </div>
-          </div>
-        </div>
-        <div class="photo__list">
-          <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" alt="" width="280" height="180">
-          <div class="photo__block">
-            <b class="photo__name">Максим</b>
-            <span class="photo__span">(40 часов назад)</span>
-            <p class="photo__comment">Где снег-то?</p>
-            <div class="photo__please">
-              <img  class="photo__like" src="img/icon-heart.svg" alt="">
-              <span class="photo__text">Нравится: 150</span>
-            </div>
-          </div>
-        </div>
-        <div class="photo__list">
-          <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" alt="" width="280" height="180">
-          <div class="photo__block">
-            <b class="photo__name">Надежда</b>
-            <span class="photo__span">(45 часов назад)</span>
-            <p class="photo__comment">Всем GM и взаимные лайки!</p>
-            <div class="photo__please">
-              <img class="photo__like" src="img/icon-heart.svg" alt="">
-              <span class="photo__text">Нравится: 2560</span>
-            </div>
-          </div>
-        </div>
-      </div>
       </section>
-      <section class="sending-photo">
+      </div>
+      <div class="wrapper">
+        <section class="photo">
+          <div class="photo__wrapper  photo__wrapper--block">
+            <div class="photo__list">
+              <img class="photo__img" src="img/photo-car-mobile@1x.jpg" alt="" width="280" height="180">
+              <div class="photo__block">
+                <b class="photo__name">Левон</b>
+                <span class="photo__span">(5 часов назад)</span>
+                <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="photo__please">
+                  <img class="photo__like" src="img/icon-heart.svg" alt="">
+                  <span class="photo__text">Нравится: 356</span>
+                </div>
+              </div>
+            </div>
+            <div class="photo__list">
+              <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" alt="" width="280" height="180">
+              <div class="photo__block">
+                <b class="photo__name">Антон</b>
+                <span class="photo__span">(12 часов назад)</span>
+                <p class="photo__comment">Соседи будут рады!</p>
+                <div class="photo__please">
+                  <img class="photo__like" src="img/icon-heart.svg" alt="">
+                  <span class="photo__text">Нравится: 666</span>
+                </div>
+              </div>
+            </div>
+            <div class="photo__list">
+              <img class="photo__img" src="img/photo-window-mobile@1x.jpg" alt="" width="280" height="180">
+              <div class="photo__block">
+                <b class="photo__name">Борис</b>
+                <span class="photo__span">(20 часов назад)</span>
+                <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="photo__please">
+                  <img class="photo__like" src="img/icon-heart.svg" alt="">
+                  <span class="photo__text">Нравится: 215</span>
+                </div>
+              </div>
+            </div>
+            <div class="photo__list">
+              <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" alt=""  width="280" height="180">
+              <div class="photo__block">
+                <b class="photo__name">Сергей</b>
+                <span class="photo__span">(25 часов назад)</span>
+                <p class="photo__comment">Самая кубанская в мире!</p>
+                <div class="photo__please">
+                  <img class="photo__like" src="img/icon-heart.svg" alt="">
+                  <span class="photo__text">Нравится: 4</span>
+                </div>
+              </div>
+            </div>
+            <div class="photo__list">
+              <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" alt="" width="280" height="180">
+              <div class="photo__block">
+                <b class="photo__name">Максим</b>
+                <span class="photo__span">(40 часов назад)</span>
+                <p class="photo__comment">Где снег-то?</p>
+                <div class="photo__please">
+                  <img  class="photo__like" src="img/icon-heart.svg" alt="">
+                  <span class="photo__text">Нравится: 150</span>
+                </div>
+              </div>
+            </div>
+            <div class="photo__list">
+              <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" alt="" width="280" height="180">
+              <div class="photo__block">
+                <b class="photo__name">Надежда</b>
+                <span class="photo__span">(45 часов назад)</span>
+                <p class="photo__comment">Всем GM и взаимные лайки!</p>
+                <div class="photo__please">
+                  <img class="photo__like" src="img/icon-heart.svg" alt="">
+                  <span class="photo__text">Нравится: 2560</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sending-photo">
         <p class="sending-photo__text">Затмите их всех!<br>Выкладывайте все, что накопилось в<br class="sending-photo__br"> телефоне!</p>
         <div class="sending-photo__filters">
           <img class="sending-photo__img" src="img/photo-road-mobile@1x.jpg" alt="" width="280" height="374">
@@ -152,7 +160,6 @@
           </div>
       </section>
     </main>
-
     <footer class="page-footer">
       <h2 class="visually-hidden">Ссылки на социальные сети</h2>
       <div class="page-footer__img">
@@ -172,3 +179,6 @@
         </a>
       </div>
     </footer>
+    </div>
+  </body>
+</html>

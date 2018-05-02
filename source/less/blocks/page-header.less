@@ -23,10 +23,19 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    width: @desktop-width;
+    width: 100%;
     min-height: 110px;
     display: flex;
     flex-direction: row;
+  }
+
+  .page-header__wrapper {
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .page-header__toggle {
