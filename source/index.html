@@ -4,14 +4,21 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
+    <div class="wrapper wrapper__index">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="http://placehold.it/150x100" alt="">
-      </a>
-      <button class="page-header__toggle" type="button">Открыть меню</button>
+      <div class="page-header__wrapper">
+      <div class="page-header__block">
+        <a class="page-header__logo">
+          <img src="http://placehold.it/150x100" alt="">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+      </div>
       <nav class="main-nav">
         <h2 class="visually-hidden">Меню сайта</h2>
         <ul class="main-nav__list site-list">
@@ -21,70 +28,87 @@
           <li class="site-list__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
         </ul>
       </nav>
+    </div>
     </header>
     <h1 class="visually-hidden">Приложение лучшей соцсети в мире!!!</h1>
     <main class="page-main">
       <article class="download-app">
         <h2 class="visually-hidden">Скачать приложение</h2>
-        <div class="download-app__img">
-          <img src="img/bg-back-mobile@1x.jpg" alt="">
+
+        <div class="download-app__block">
+          <p class="download-app__slogan">Взгляните<br> на жизнь<br> иначе!</p>
+          <div class="download-app__btn">
+            <a href="https://itunes.apple.com/ru/genre/ios/id36?mt=8">Скачать приложение</a>
+          </div>
+          <div class="download-app__market">
+            <ul class="download-app__list">
+              <li class="download-app__item">
+                <a href="https://itunes.apple.com/ru/genre/ios/id36?mt=8" aria-label="apple store">apple store</a>
+              </li>
+              <li class="download-app__item">
+                <a href="https://play.google.com/store/apps" aria-label="google play">google play
+                </a>
+              </li>
+              <li class="download-app__item">
+                <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone?icid=CNavAppsWindowsPhoneApps" aria-label="microsoft">microsoft
+                </a>
+              </li>
+            </ul>
+            <p class="download-app__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
         </div>
-        <div class="download-app__btn">
-          <a href="https://itunes.apple.com/ru/genre/ios/id36?mt=8">Скачать приложение</a>
-        </div>
-        <div class="download-app__market">
-          <ul class="download-app__list">
-            <li class="download-app__item">
-              <a href="https://itunes.apple.com/ru/genre/ios/id36?mt=8" aria-label="apple store">apple store</a>
-            </li>
-            <li class="download-app__item">
-              <a href="https://play.google.com/store/apps" aria-label="google play">google play
-              </a>
-            </li>
-            <li class="download-app__item">
-              <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone?icid=CNavAppsWindowsPhoneApps" aria-label="microsoft">microsoft
-              </a>
-            </li>
-          </ul>
-          <p class="download-app__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
-        </div>
+      </div>
       </article>
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <div class="advantages__block">
           <p class="advantages__text">Устали от серости мегаполиса?</p>
-          <p class="advantages__text">Нам есть, что вам предложить!</p>
+          <p class="advantages__text">Нам есть, что вам<br class="advantages__br"> предложить!</p>
         </div>
+        <div class="advantages__wrapper">
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--mood">
+            <img src="http://placehold.it/150x100" alt="" class="advantages__mobil">
             <h3 class="advantages__title">Поднимает настроение</h3>
             <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="advantages__item advantages__item--world">
+            <img src="http://placehold.it/150x100" alt="" class="advantages__mobil">
             <h3 class="advantages__title ">Меняет мир вокруг</h3>
             <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="advantages__item advantages__item--friend">
+            <img src="http://placehold.it/150x100" alt="" class="advantages__mobil">
             <h3 class="advantages__title">Заводит новых друзей</h3>
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <div class="advantages__img">
-          <img src="img/iphone-screen-mobile@1x.png" alt="">
+      </div>
+        <div class="advantages__effect">
+          <img class="advantages__img" src="http://placehold.it/150x100" alt="">
+          <ul class="advantages__research">
+            <li>
+              <h3 class="advantages__time">Эффект<br class="advantages__br advantages__br--time"> на 24 часа!</h3>
+              <p class="advantages__description advantages__description--time">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <a href="#" class="advantages__link">Узнать больше об исследовании</a>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__wrapper">
-          <div class="reviews__item">
+          <div class="reviews__item reviews__item--open">
+            <b class="reviews__profession visually-hidden">25 лет, водитель трамвая</b>
             <h2 class="reviews__title">Николай Петров</h2>
             <p class="reviews__author">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
-          <div class="reviews__item visually-hidden">
+          <div class="reviews__item reviews__item--close">
+            <b class="reviews__profession visually-hidden">25 лет, водитель трамвая</b>
             <h2 class="reviews__title">Николай Петров</h2>
             <p class="reviews__author">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
-          <div class="reviews__item visually-hidden">
+          <div class="reviews__item reviews__item--close">
+            <b class="reviews__profession visually-hidden">25 лет, водитель трамвая</b>
             <h2 class="reviews__title">Николай Петров</h2>
             <p class="reviews__author">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
@@ -93,6 +117,10 @@
           <button class="reviews__button" type="button">1</button>
           <button class="reviews__button" type="button">2</button>
           <button class="reviews__button" type="button">3</button>
+        </p>
+        <p class="reviews__arrow">
+          <button class="reviews__left__arrow" type="button"><</button>
+          <button class="reviews__right__arrow" type="button">></button>
         </p>
       </section>
       <section class="tariff">
@@ -172,38 +200,103 @@
                 <img src="http://placehold.it/25x25" alt=""></td>
               </tr>
             </table>
-          </div>
-        <p class="tariff__toggles">
-          <button class="tariff-button" type="button">1</button>
-          <button class="tariff-button" type="button">2</button>
-          <button class="tariff-button" type="button">3</button>
-        </p>
+            </div>
+            <div class="tariff__tablet">
+              <table class="tariff__table__tablet">
+                <tr class="tariff__line">
+                <th class="tariff__list">
+                </th>
+                <th class="tariff__list">
+                  <b class="tariff__item">База</b>
+                  <span class="tariff__price">1,99 USD</span>
+                </th>
+                <th class="tariff__list">
+                  <b class="tariff__item">Стандарт</b>
+                  <span class="tariff__price">3,99 USD</span>
+                </th>
+                <th class="tariff__list">
+                  <b class="tariff__item">Анлим</b>
+                  <span class="tariff__price">9,99 USD</span>
+                </th>
+                </tr>
+                <tr class="tariff__line">
+                  <td class="tariff__cell">Розовый фильтр</td>
+                  <td class="tariff__cell"><img src="http://placehold.it/25x25" alt=""></td>
+                  <td class="tariff__cell"><img src="http://placehold.it/25x25" alt=""></td>
+                  <td class="tariff__cell"><img src="http://placehold.it/25x25" alt=""></td>
+                </tr>
+                <tr class="tariff__line">
+                  <td class="tariff__cell">Смайлики</td>
+                  <td class="tariff__cell"><img src="http://placehold.it/25x25" alt=""></td>
+                  <td class="tariff__cell"><img src="http://placehold.it/25x25" alt=""></td>
+                  <td class="tariff__cell"><img src="http://placehold.it/25x25" alt=""></td>
+                </tr>
+                  <tr class="tariff__line">
+                  <td class="tariff__cell">Комментарии</td>
+                  <td class="tariff__cell"><img src="http://placehold.it/25x25" alt=""></td>
+                  <td class="tariff__cell"><img src="http://placehold.it/25x25" alt=""></td>
+                  <td class="tariff__cell"><img src="http://placehold.it/25x25" alt=""></td>
+                </tr>
+              </table>
+            </div>
+            <p class="tariff__toggles">
+              <button class="tariff-button" type="button">1</button>
+              <button class="tariff-button" type="button">2</button>
+              <button class="tariff-button" type="button">3</button>
+            </p>
       </section>
     </main>
 
-    <footer class="page-footer">
+    <section class="contacts-footer">
       <h2 class="visually-hidden">Контакты</h2>
-      <ul class="page-footer__list contacts">
-        <li class="contacts__item">
+      <ul class="contacts-footer__list contacts">
+        <li class="contacts__item contacts__item--text">
           <b class="contacts__text">Остались вопросы?</b>
           <b class="contacts__text">Свяжитесь с нами!</b>
         </li>
-        <li class="contacts__item">
-          <h4 class="contacts__title">Звоните:</h4>
-          <a href="tel:+7(812)555-66-66" class="contacts__phone">+7(812)555-66-66</a>
-        </li>
-        <li class="contacts__item">
-          <h4 class="contacts__title">Пишите:</h4>
-          <a href="mail@htmlacademy.ru" class="contacts__mail">mail@htmlacademy.ru</a>
-        </li>
-        <li class="contacts__item">
-          <h4 class="contacts__title">Приезжайте в гости:</h4>
-          <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
-        </li>
       </ul>
-      <div class="page-footer__map">
+      <div class="contacts contacts--wrapper">
+        <ul class="contacts contacts--list">
+          <li class="contacts__block">
+            <h4 class="contacts__title">Звоните:</h4>
+            <a href="tel:+7(812)555-66-66" class="contacts__phone">+7(812)555-66-66</a>
+          </li>
+          <li class="contacts__block">
+            <h4 class="contacts__title">Пишите:</h4>
+            <a href="mail@htmlacademy.ru" class="contacts__mail">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <h4 class="contacts__title">Приезжайте в гости:</h4>
+            <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
+      </div>
+      <div class="contacts-footer__map">
         <img src="img/bg-map-mobile@1x.png" alt="">
       </div>
+    </section>
+
+    <footer class="page-footer page-footer--index">
+      <h2 class="visually-hidden">Ссылки на социальные сети</h2>
+      <div class="page-footer__img">
+        <img class="page-footer__glasses" src="http://placehold.it/150x100" alt=""><a href="https://htmlacademy.ru/intensive/adaptive">
+          <img  class="page-footer__pink" src="http://placehold.it/150x100" alt="">
+        </a>
+      </div>
+      <div class="page-footer__social">
+        <a class="page-footer__btn page-footer__btn--tv" href="#" aria-label="twitter"><span class="visually-hidden">twitter</span></a>
+        <a class="page-footer__btn page-footer__btn--fb " href="#" aria-label="facebook"><span class="visually-hidden">facebook</span></a>
+        <a class="page-footer__btn page-footer__btn--yo" href="#" aria-label="youtube"><span class="visually-hidden">youtube</span></a>
+      </div>
+      <div class="page-footer__list">
+        <span class="page-footer__span">Разработано</span>
+        <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="http://placehold.it/150x100" alt="">
+        </a>
+      </div>
     </footer>
+    </div>
   </body>
 </html>

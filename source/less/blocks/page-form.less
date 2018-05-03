@@ -1,9 +1,23 @@
 .page-form {
   width: @mobail-width;
   min-height: 2100px;
-  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
 }
 
-.page-form fieldset {
-  border: none;
+@media (min-width: @tablet-width) {
+  .page-form {
+    width: @tablet-width;
+    min-height: 2000px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-form {
+    width: 100%;
+    min-height: 1100px;
+  }
 }

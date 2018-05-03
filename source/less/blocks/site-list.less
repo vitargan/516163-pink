@@ -1,6 +1,9 @@
 .site-list {
   list-style: none;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .site-list a {
@@ -8,4 +11,36 @@
   font-size: 18px;
   line-height: 32px;
   font-weight: bold;
+  display: block;
+  height: 64px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 20px;
+  border-bottom: 1px solid #000000;
+}
+
+.site-list__item:first-child {
+  border-top: 1px solid #000000;
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    flex-direction: row;
+    display: flex;
+    min-height: 115px;
+    width: 780px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+
+  .site-list a {
+    box-shadow: none;
+    display: flex;
+    border: none;
+  }
+
+  .site-list__item {
+    border: none;
+  }
 }
