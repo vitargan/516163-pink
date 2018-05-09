@@ -1,17 +1,30 @@
 .advantages {
   min-height: 1002px;
   width: @mobail-width;
-  border: 2px solid red;
   text-align: center;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   background: @background-tariff;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: url("/img/iphone-screen-mobile@1x.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 0 43px;
+    display: block;
+    width: 157px;
+    height: 320px;
+    bottom: 0;
+    left: 81px;
+  }
 }
 
 .advantages__block {
   background: @background-advantages-block;
-  padding-top: 40px;
+  padding-top: 44px;
   min-height: 200px;
   box-sizing: border-box;
 }
@@ -30,7 +43,16 @@
   padding: 0;
   margin: 0;
   background: @background-tariff;
-}
+  width: 280px;
+  margin-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  padding-top: 46px;
+
+  }
+
+
 
 .advantages__title {
   font-size: 18px;
@@ -47,6 +69,22 @@
   color: @color-advantages__description;
   margin: 0;
   margin-top: 20px;
+}
+
+.advantages__title--world {
+  margin-top: 33px;
+}
+
+.advantages__description--mood {
+  margin-top: 11px;
+}
+
+.advantages__description--world {
+  margin-top: 8px;
+}
+
+.advantages__description--friend {
+  margin-top: 8px;
 }
 
 .advantages__effect {
@@ -74,10 +112,36 @@
   display: none;
 }
 
+
+
 @media (min-width: @tablet-width) {
   .advantages {
-    min-height: 1280px;
+    min-height: 1127px;
     width: @tablet-width;
+
+    &::before {
+      content: "";
+      background: url("/img/iphone-screen-mobile@1x.png");
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: 0 43px;
+      display: block;
+      width: 157px;
+      height: 320px;
+      bottom: 554px;
+      left: 81px;
+    }
+  }
+
+  .advantages__text {
+    font-size: 40px;
+    line-height: 48px;
+    padding: 0;
+  }
+
+  .advantages__block {
+    padding-top: 51px;
+    min-height: 291px;
   }
 
   .advantages__effect {
@@ -89,12 +153,26 @@
   }
 
   .advantages__list {
-    min-height: 500px;
+    min-height: 436px;
     width: 300px;
     display: flex;
     flex-direction: column;
     padding-left: 300px;
     text-align: left;
+    padding: 0;
+    margin-left: 330px;
+  }
+
+  .advantages__title--mood {
+    margin-top: 28px;
+  }
+
+  .advantages__description--world {
+    margin-top: 13px;
+  }
+
+  .advantages__description--friend {
+     margin-top: 11px;
   }
 
   .advantages__research {
@@ -103,9 +181,14 @@
     text-align: left;
     list-style: none;
     margin: 0;
-    padding-top: 95px;
-    margin-left: 150px;
+    margin-left: 179px;
+    padding-top: 98px;
     box-sizing: border-box;
+  }
+
+  .advantages__description--time {
+    margin-top: 8px;
+    margin-bottom: 11px;
   }
 
   .advantages__br {

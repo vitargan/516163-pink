@@ -16,6 +16,108 @@
     margin-left: auto;
     margin-right: auto;
     background: @background-footer;
+    outline: 1px solid red;
+  }
+
+  .page-footer__span {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: @contacts__text;
+    margin-right: 19px;
+    margin-left: 3px;
+  }
+
+  .page-footer__social {
+    width: 270px;
+    text-align: center;
+    padding-right: 7px;
+    padding-top: 36px;
+    box-sizing: border-box;
+
+  }
+
+  .page-footer__btn {
+    border-radius: 50px;
+    border: 3px solid rgba(40, 54, 69, 0.1);
+    width: 53px;
+    height: 53px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 7px;
+    text-align: center;
+
+    &:hover {
+      border: 3px solid rgba(0, 0, 0, 1);
+    }
+
+    &:active {
+      border: 3px solid rgba(40, 54, 69, 0.1);
+    }
+  }
+
+  .page-footer__btn:active path {
+    opacity: 0.3;
+  }
+
+  .page-footer__img {
+    width: 150px;
+    height: 90px;
+    margin-top: 35px;
+    margin-left: 20px;
+  }
+
+  .page-footer--pink:hover path {
+    fill: @color-footer;
+  }
+
+  .page-footer--pink:active {
+    opacity: 0.3;
+  }
+
+  .page-footer__btn--tv {
+    padding-top: 17px;
+  }
+
+  .page-footer__btn--tv path {
+    fill: @color-footer;
+  }
+
+  .page-footer__btn--fb {
+    padding-top: 13px;
+  }
+
+  .page-footer__btn--fb path {
+    fill: @color-footer;
+  }
+
+  .page-footer__btn--yo {
+    padding-top: 17px;
+  }
+
+  .page-footer__btn--yo path {
+    fill: @color-footer;
+  }
+
+  .page-footer__logo path {
+    fill: @color-footer;
+    &:hover {
+      fill: @contacts__text;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .page-footer__logo {
+    margin-top: 9px;
+  }
+
+  .page-footer__list {
+    width: 150px;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -24,7 +126,7 @@
     display: flex;
     justify-content: space-between;
     width: 960px;
-    min-height: 195px;
+    min-height: 198px;
     margin-left: auto;
     margin-right: auto;
     background: @background-footer;

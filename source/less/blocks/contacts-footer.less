@@ -1,5 +1,4 @@
 .contacts-footer {
-  border: 2px solid red;
   background: @background-footer;
   min-height: 612px;
   width: @mobail-width;
@@ -12,10 +11,42 @@
   padding: 0;
 }
 
+.contacts-footer__map {
+  position: relative;
+
+  &::before {
+    content: "";
+    background: url("/img/bg-map-mobile@1x.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 0 -448px;
+    width: 320px;
+    height: 237px;
+    bottom: -277px;
+    left: 0;
+  }
+
+}
+
 @media (min-width: @tablet-width) {
   .contacts-footer {
     width: @tablet-width;
-    min-height: 780px;
+    min-height: 732px;
+  }
+
+  .contacts-footer__map {
+    height: 370px;
+
+    &::before {
+      content: "";
+      background: url("/img/bg-map-mobile@1x.png");
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: 0 -448px;
+      height: 237px;
+      bottom: 50px;
+      left: 0;
+    }
   }
 }
 

@@ -1,16 +1,30 @@
 .tariff {
-  border: 2px solid red;
   background: @background-tariff;
-  min-height: 380px;
+  min-height: 396px;
   width: @mobail-width;
   text-align: center;
   box-sizing: border-box;
+}
+
+.tariff__slider {
+  width: 280px;
+  margin-left: 20px;
+  border: 2px solid @background-tariff;
 }
 
 .tariff__list {
   list-style: none;
   text-align: center;
   padding: 0;
+  height: 98px;
+  background: @background-header;
+  box-sizing: border-box;
+  padding-top: 20px;
+  margin-bottom: 0px;
+  border-left: 2px solid @background-tariff;
+  border-right: 2px solid @background-tariff;
+
+
 }
 
 .tariff__item {
@@ -19,6 +33,7 @@
   font-weight: bold;
   text-transform: uppercase;
   color: @color-tariff__item;
+
 }
 
 .tariff__price {
@@ -28,21 +43,69 @@
   color: @color-price;
 }
 
+
+
 .tariff__cell {
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
+  width: 280px;
+  height: 58px;
   text-transform: uppercase;
+  background: @background-reviews;
+  text-align: left;
+  padding-left: 23px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 21px;
+}
+
+.tariff__cell path {
+  fill: #3dc644;
+}
+
+.tariff__svg--no path {
+  fill: #f25b26;
 }
 
 .tariff__table__tablet {
   display: none;
 }
 
+.tariff-button {
+  border: none;
+  padding: 0;
+  margin-right: 15px;
+}
+
+.tariff__button--2 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  border: 3px solid #000000;
+}
+
+.tariff__button--1,
+.tariff__button--3 {
+  width: 6px;
+  height: 6px;
+  background: @color-reviews__author;
+  opacity: 0.3;
+  border-radius: 50px;
+}
+
+.tariff__toggles {
+  padding-left: 19px;
+  margin-top: 33px;
+}
+
+
 @media (min-width: @tablet-width) {
   .tariff {
     width: @tablet-width;
-    min-height: 325px;
+    min-height: 289px;
   }
 
   .tariff__slider {
@@ -55,8 +118,55 @@
 
   .tariff__table__tablet {
     display: block;
-    margin-left: 45px;
-    margin-top: 40px;
+    margin-left: 20px;
+    margin-top: 42px;
+    border-collapse: collapse;
+  }
+
+  .tariff__list {
+    height: 78px;
+    width: 156px;
+    border: none;
+    border-right: 1px solid #f2f2f2;
+    padding-top: 10px;
+    border-collapse: collapse;
+  }
+
+  .tariff__list:first-child {
+    margin-left: 161px;
+  }
+
+  .tariff__item {
+    font-size: 16px;
+  }
+
+  .tariff__price {
+    font-size: 18px;
+  }
+
+  .tariff__line {
+    display: flex;
+    width: 620px;
+    text-align: center;
+  }
+
+  .tariff__cell {
+    padding: 0;
+    height: 47px;
+    border: 1px solid #eaeaea;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+  }
+
+  .tariff__cell:first-child {
+    justify-content: flex-start;
+    padding-left: 17px;
+    box-sizing: border-box;
   }
 }
 
