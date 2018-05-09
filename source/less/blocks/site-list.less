@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   background: @background-header;
+  width: @mobail-width;
 }
 
 .site-list a {
@@ -36,6 +37,12 @@
 
 .site-list__span {
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    width: @tablet-width;
+  }
 }
 
 @media (min-width: @desktop-width) {
