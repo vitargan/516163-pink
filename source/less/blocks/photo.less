@@ -1,6 +1,6 @@
 .photo {
   width: @mobail-width;
-  min-height: 2100px;
+  min-height: 1944px;
   background: @background-photo;
   margin: 0;
 }
@@ -18,13 +18,22 @@
   background: @background-photo__block;
   margin: 0;
   margin-left: 20px;
-  padding-top: 10px;
+  padding-top: 18px;
   box-sizing: border-box;
 }
 
 .photo__list {
   margin-bottom: 20px;
 }
+
+.photo__list:nth-child(4) {
+  margin-bottom: 23px;
+}
+
+.photo__list:nth-child(5) {
+  margin-bottom: 21px;
+}
+
 
 .photo__name {
   font-size: 14px;
@@ -39,7 +48,7 @@
   font-weight: 300;
   color: @color-photo__text;
   text-transform: uppercase;
-  padding-left: 15px;
+  padding-left: 3px;
   padding-top: 20px;
 }
 
@@ -50,6 +59,8 @@
   color: @color-photo__text;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 0;
+  margin-bottom: 11px;
 }
 
 .photo__like {
@@ -67,7 +78,8 @@
 }
 
 .photo__please {
-  padding-bottom: 15px;
+  padding-bottom: 17px;
+  padding-left: 2px;
 }
 
 .photo__img--hit {
@@ -81,7 +93,24 @@
 
 .photo__hit {
   min-height: 330px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
+}
+
+.photo__block--hit {
+  padding-top: 16px;
+}
+
+.photo__comment--hit {
+  margin-bottom: 11px;
+  margin-top: 0px;
+}
+
+.photo__span--hit {
+  padding-left: 0;
+}
+
+.photo__please--hit {
+  padding-left: 3px
 }
 
 @media (min-width: @tablet-width) {
