@@ -122,7 +122,7 @@
   position: relative;
 }
 
-.sending-photo__scale--mobil {
+.sending-photo__scale--crop {
   border: 1px solid @contacts__title;
   position: absolute;
   top: 86px;
@@ -130,7 +130,69 @@
   width: 238px;
 }
 
-.sending-photo__toggle--mobil {
+.sending-photo__toggle--crop {
+  position: absolute;
+  border: 2px solid @color-footer;
+  border-radius: 50px;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-color: @background-sending;
+  top: 79px;
+  left: -23px;
+
+  &:active {
+    background: url(../img/icon-map-marker.svg);
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: -11px -11px;
+    border-radius: 50px;
+    top: 79px;
+    left: -23px;
+  }
+}
+
+.sending-photo__scale--fill {
+  border: 1px solid @contacts__title;
+  position: absolute;
+  top: 86px;
+  left: -214px;
+  width: 238px;
+}
+
+.sending-photo__toggle--fill {
+  position: absolute;
+  border: 2px solid @color-footer;
+  border-radius: 50px;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-color: @background-sending;
+  top: 79px;
+  left: -23px;
+
+  &:active {
+    background: url(../img/icon-map-marker.svg);
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: -11px -11px;
+    border-radius: 50px;
+    top: 79px;
+    left: -23px;
+  }
+}
+
+.sending-photo__scale--contrast {
+  border: 1px solid @contacts__title;
+  position: absolute;
+  top: 86px;
+  left: -214px;
+  width: 238px;
+}
+
+.sending-photo__toggle--contrast {
   position: absolute;
   border: 2px solid @color-footer;
   border-radius: 50px;
@@ -202,7 +264,9 @@
   .sending-photo {
     width: @tablet-width;
     background: @background-sending;
-    min-height: 706px;
+    min-height: 663px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .sending-photo__text {
@@ -229,6 +293,10 @@
     flex-direction: column;
     margin-top: 0px;
     margin-left: 17px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .sending-photo__wrapper {
@@ -255,28 +323,92 @@
   }
 
   .sending-photo__fill {
-    height: 55px;
+    height: 70px;
     width: 275px;
     margin: 0;
     border-bottom: 1px solid @button-cancellation;
   }
 
   .sending-photo__contrast {
-    height: 55px;
+    height: 70px;
     width: 275px;
     margin: 0;
     border-bottom: 1px solid @button-cancellation;
   }
 
+  .sending-photo__controls {
+    width: 1px;
+    height: 1px;
+  }
+
   .sending-photo__button--send {
     width: 260px;
+    margin-top: 22px;
+    margin-left: 26px;
   }
 
   .sending-photo__button--cancellation {
     width: 260px;
+    margin-top: 28px;
+    margin-left: 29px;
   }
 
+  .sending-photo__scale--crop {
+    border: 1px solid @contacts__title;
+    position: absolute;
+    top: -181px;
+    left: 63px;
+    width: 200px;
+  }
 
+  .sending-photo__toggle--crop {
+    top: -188px;
+    left: 208px;
+    background-color: @background-sending;
+
+    &:active {
+      top: -188px;
+      left: 208px;
+    }
+  }
+
+  .sending-photo__scale--fill {
+    border: 1px solid @contacts__title;
+    position: absolute;
+    top: -108px;
+    left: 63px;
+    width: 200px;
+  }
+
+  .sending-photo__toggle--fill {
+      top: -115px;
+      left: 87px;
+      background-color: @background-sending;
+
+    &:active {
+      top: -115px;
+      left: 87px;
+    }
+  }
+
+  .sending-photo__scale--contrast {
+    border: 1px solid @contacts__title;
+    position: absolute;
+    top: -38px;
+    left: 63px;
+    width: 200px;
+  }
+
+  .sending-photo__toggle--contrast {
+    top: -45px;
+    left: 158px;
+    background-color: @background-sending;
+
+    &:active {
+      top: -45px;
+      left: 158px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -288,7 +420,6 @@
   .sending-photo__filters {
     width: 940px;
     background: @background-effect-desktop;
-    margin-left: 130px;
     padding-left: 80px;
   }
 
