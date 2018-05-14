@@ -1,6 +1,6 @@
 .sending-photo {
   width: @mobail-width;
-  min-height: 929px;
+  min-height: 907px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -19,6 +19,11 @@
   box-sizing: border-box;
 }
 
+.sending-photo__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .sending-photo__img {
   padding-left: 20px;
   padding-top: 20px;
@@ -26,7 +31,7 @@
 
 .sending-photo__filters {
   background-color: @background-sending;
-  min-height: 756px;
+  min-height: 759px;
 }
 
 .sending-photo__list {
@@ -36,44 +41,173 @@
 .sending-photo__battons {
   display: flex;
   flex-direction: column;
+  margin-top: 100px;
 }
 
 .sending-photo__list {
   display: flex;
   margin-top: 36px;
-  margin-left: 55px
+  margin-left: 55px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    border: 1px solid @button-cancellation;
+    width: 317px;
+    bottom: -71px;
+    left: -56px;
+  }
 }
 
 .sending-photo__crop {
   margin-right: 30px;
+  fill: @sending-icon;
+
+  &:hover {
+    fill: @sending-icon-hover;
+  }
+
+  &:active  {
+    fill: @color-footer;
+  }
+}
+
+.sending-photo__crop--active {
+  fill: @color-footer;
 }
 
 .sending-photo__fill {
   margin-right: 41px;
+  fill: @sending-icon;
+
+  &:hover {
+    fill: @sending-icon-hover;
+  }
+
+  &:active  {
+    fill: @color-footer;
+  }
 }
 
 .sending-photo__contrast {
   margin-top: 8px;
+  fill: @sending-icon;
+
+  &:hover {
+    fill: @sending-icon-hover;
+  }
+
+  &:active  {
+    fill: @color-footer;
+  }
+}
+
+.sending-photo__contrast path {
+  fill: @sending-icon;
+
+  &:hover {
+    fill: @sending-icon-hover;
+  }
+
+  &:active  {
+    fill: @color-footer;
+  }
 }
 
 .sending-photo__controls {
   height: 50px;
   width: 280px;
+  position: relative;
 }
 
 .sending-photo__scale--mobil {
-  border: 2px solid #000000;
+  border: 1px solid @contacts__title;
+  position: absolute;
+  top: 86px;
+  left: -214px;
+  width: 238px;
 }
 
+.sending-photo__toggle--mobil {
+  position: absolute;
+  border: 2px solid @color-footer;
+  border-radius: 50px;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-color: @background-sending;
+  top: 79px;
+  left: -23px;
+
+  &:active {
+    background: url(../img/icon-map-marker.svg);
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: -11px -11px;
+    border-radius: 50px;
+    top: 79px;
+    left: -23px;
+  }
+}
+
+.sending-photo__button--send {
+  width: 280px;
+  height: 51px;
+  border: 3px solid @color-footer;
+  border-radius: 50px;
+  background-color: @background-sending;
+  font-size: 18px;
+  color: @color-footer;
+  font-weight: bold;
+  margin-top: 11px;
+  margin-left: 17px;
+
+  &:hover {
+    background-color: @color-footer;
+    color: @background-footer;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.sending-photo__button--cancellation {
+  width: 280px;
+  height: 51px;
+  border: 3px solid #e5e7e7;
+  border-radius: 50px;
+  background-color: @background-sending;
+  font-size: 18px;
+  color: #e5e7e7;
+  font-weight: bold;
+  margin-top: 17px;
+  margin-left: 17px;
+
+  &:hover {
+    border: 3px solid @sending-icon-hover;
+    color: @sending-icon-hover;
+  }
+
+  &:active {
+    background-color: @sending-icon-hover;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
 
 @media (min-width: @tablet-width) {
   .sending-photo {
     width: @tablet-width;
     background: @background-sending;
+    min-height: 706px;
   }
 
   .sending-photo__text {
     font-size: 18px;
+    padding-top: 23px;
   }
 
   .sending-photo__br {
@@ -90,9 +224,11 @@
   }
 
   .sending-photo__list {
-    height: 430px;
+    min-height: 244px;
     display: flex;
     flex-direction: column;
+    margin-top: 0px;
+    margin-left: 17px;
   }
 
   .sending-photo__wrapper {
@@ -106,6 +242,41 @@
     height: 400px;
     padding: 0;
   }
+
+  .sending-photo__battons {
+    margin: 0;
+  }
+
+  .sending-photo__crop {
+    height: 55px;
+    width: 275px;
+    margin: 0;
+    border-bottom: 1px solid @button-cancellation;
+  }
+
+  .sending-photo__fill {
+    height: 55px;
+    width: 275px;
+    margin: 0;
+    border-bottom: 1px solid @button-cancellation;
+  }
+
+  .sending-photo__contrast {
+    height: 55px;
+    width: 275px;
+    margin: 0;
+    border-bottom: 1px solid @button-cancellation;
+  }
+
+  .sending-photo__button--send {
+    width: 260px;
+  }
+
+  .sending-photo__button--cancellation {
+    width: 260px;
+  }
+
+
 }
 
 @media (min-width: @desktop-width) {
