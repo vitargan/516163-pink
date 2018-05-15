@@ -11,88 +11,97 @@
   </head>
   <body>
     <div class="wrapper wrapper__index">
-    <header class="page-header">
-      <div class="page-header__wrapper">
-      <div class="page-header__block">
-        <a class="page-header__logo" href="index.html" aria-label="ссылка на главную страницу">
-          <img src="http://placehold.it/150x100" alt="">
-        </a>
-        <button class="page-header__toggle" type="button">Открыть меню</button>
+      <header class="form-header">
+        <div class="form-header__wrapper">
+          <div class="form-header__list">
+          <div class="form-header__block">
+            <a class="form-header__logo" href="index.html" aria-label="ссылка на главную страницу">
+              <svg version="1" xmlns="http://www.w3.org/2000/svg" width="74.426" height="22.859"><g fill="#ffffff"><path d="M0 1.449C0 .741.58.161 1.256.161h7.18c5.087 0 8.436 2.704 8.436 7.147v.064c0 4.861-4.057 7.373-8.854 7.373H2.544v6.825c0 .708-.58 1.288-1.288 1.288C.58 22.859 0 22.279 0 21.571V1.449zm8.114 10.979c3.734 0 6.182-1.996 6.182-4.958v-.065c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917h5.57zM21.729 1.288C21.729.58 22.308 0 22.983 0c.709 0 1.288.58 1.288 1.288v20.283c0 .708-.579 1.288-1.288 1.288-.676 0-1.255-.58-1.255-1.288V1.288zM30.87 1.32c0-.676.579-1.256 1.256-1.256h.354c.58 0 .934.29 1.288.74l13.684 17.45V1.256A1.256 1.256 0 0 1 48.707 0c.676 0 1.223.58 1.223 1.256v20.348c0 .676-.482 1.191-1.158 1.191h-.129c-.548 0-.934-.322-1.32-.772L33.349 4.153v17.45c0 .676-.547 1.256-1.255 1.256-.677 0-1.224-.58-1.224-1.256V1.32zM56.3 1.288C56.3.58 56.879 0 57.556 0c.708 0 1.287.58 1.287 1.288v12.331L71.689.451c.29-.258.58-.451.999-.451.676 0 1.224.612 1.224 1.256 0 .354-.161.644-.419.901l-7.984 7.92 8.564 10.561c.225.29.354.547.354.934 0 .676-.579 1.288-1.287 1.288-.483 0-.806-.258-1.03-.58l-8.403-10.463-4.862 4.861v4.894c0 .708-.579 1.288-1.287 1.288-.677 0-1.256-.58-1.256-1.288V1.288z"/></g></svg>
+            </a>
+            <button class="form-header__toggle" type="button"><svg version="1" xmlns="http://www.w3.org/2000/svg" width="23.867" height="23.867"><path fill="#FFF" d="M15.087 11.933l8.56-8.559a.75.75 0 0 0 0-1.061L21.554.22a.747.747 0 0 0-1.06 0l-8.561 8.56L3.373.22a.771.771 0 0 0-1.061 0L.22 2.313a.75.75 0 0 0 0 1.061l8.56 8.559-8.56 8.559a.751.751 0 0 0 0 1.062l2.093 2.094a.744.744 0 0 0 1.06 0l8.561-8.56 8.56 8.56a.746.746 0 0 0 1.06 0l2.093-2.094a.751.751 0 0 0 0-1.062l-8.56-8.559z"/></svg>
+            </button>
+          </div>
+          <nav class="main-nav">
+            <h2 class="visually-hidden">Меню сайта</h2>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item"><a href="index.html">Главная</a></li>
+              <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+              <li class="site-list__item site-list__item--active"><a>Конкурс</a></li>
+              <li class="site-list__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <nav class="main-nav">
-        <h2 class="visually-hidden">Меню сайта</h2>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-          <li class="site-list__item site-list__item--active"><a>Конкурс</a></li>
-          <li class="site-list__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
-        </ul>
-      </nav>
-    </div>
-    </header>
-    <h1 class="visually-hidden">Приложение лучшей соцсети в мире!!!</h1>
-    <main class="page-main">
       <section class="competition">
-        <p class="competition__text">Конкурс на самое безбашенное<br> путешествие с Пинк</p>
-        <p class="competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        <div class="competition__wrapper">
+          <p class="competition__text">Конкурс на самое безбашенное<br> путешествие с Пинк</p>
+        </div>
+
+        <p class="competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль нa<br class="competition__br"> вашу бонусную карту!
           <span class="competition__span">Пожалуйста, заполните форму ниже:</span>
         </p>
       </section>
+    </header>
+    <h1 class="visually-hidden">Приложение лучшей соцсети в мире!!!</h1>
+    <main class="page-main">
+
       <section class="page-form">
         <h2 class="visually-hidden">Поделитесь историей</h2>
         <form class="form" action="https://echo.htmlacademy.ru"  method="post">
             <fieldset class="form__block form__block--text">
-              <ul class="form__list">
+              <ul class="form__list form__list--text">
                 <li class="form__item form__item--text">
-                  <label class="form__label" for="surname">Фамилия:
+                  <label class="form__label form__label--text" for="surname">Фамилия:
                   </label>
                   <input class="form__input form__input--text" type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
                 </li>
                 <li class="form__item form__item--text">
-                  <label class="form__label" for="name">Имя:</label>
+                  <label class="form__label form__label--text" for="name">Имя:</label>
                   <input class="form__input form__input--text" type="text" id="name" name="name" placeholder="Введите ваше имя*">
                 </li>
                 <li class="form__item form__item--text">
-                  <label class="form__label" for="patronymic">Отчество:</label>
+                  <label class="form__label form__label--text" for="patronymic">Отчество:</label>
                   <input  class="form__input form__input--text" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
                 </li>
               </ul>
             </fieldset>
+            <div class="form__checkbox">
             <fieldset class="form__block form__block--checkbox">
-              <legend class="form__legend">Ваши безбашенные<br class="form__br"> достижения в путешествии</legend>
+              <legend class="form__legend form__legend--checkbox">Ваши безбашенные<br class="form__br"> достижения в путешествии</legend>
               <div class="form__wrapper form__wrapper--checkbox">
                 <ul class="form__list form__list--checkbox">
-                  <li class="form__item">
-                    <input class="form__input" type="checkbox" id="shark" name="shark" checked>
+                  <li class="form__item form__item--checkbox">
+                    <input class="form__input form__input--checkbox" type="checkbox" id="shark" name="shark" checked>
                     <label class="form__label form__label--checkbox" for="shark">Сделал селфи с акулой</label>
                   </li>
-                  <li class="form__item">
+                  <li class="form__item form__item--checkbox">
                     <input class="form__input form__input--checkbox" type="checkbox" id="beach" name="beach" checked>
                     <label class="form__label form__label--checkbox" for="beach">Обгорел на пляже</label>
                   </li>
                 </ul>
                 <ul class="form__list form__list--checkbox">
-                  <li class="form__item">
+                  <li class="form__item form__item--checkbox">
                     <input class="form__input form__input--checkbox" type="checkbox" id="chuck-norris" name="chuck-norris">
                     <label class="form__label form__label--checkbox" for="chuck-norris">Видел Чака Норриса</label>
                   </li>
-                  <li class="form__item">
+                  <li class="form__item form__item--checkbox">
                     <input class="form__input form__input--checkbox" type="checkbox" id="souvenir" name="souvenir">
                     <label class="form__label form__label--checkbox" for="souvenir">Накупил сувениров</label>
                   </li>
                 </ul>
                 <ul class="form__list form__list--checkbox">
-                  <li class="form__item">
+                  <li class="form__item form__item--checkbox">
                     <input class="form__input form__input--checkbox" type="checkbox" id="turret" name="turret" checked>
                     <label class="form__label form__label--checkbox" for="turret">Удержал башню</label>
                   </li>
-                  <li class="form__item">
+                  <li class="form__item form__item--checkbox">
                     <input class="form__input form__input--checkbox" type="checkbox" id="hotel" name="hotel">
                     <label class="form__label form__label--checkbox" for="hotel">Разгромил отель</label>
                   </li>
                 </ul>
               </div>
             </fieldset>
+          </div>
             <fieldset class="form__block form__block--link">
               <legend class="form__legend form__legend--link">Контактная информация</legend>
             <div class="form__wrapper form__wrapper--link">
@@ -101,8 +110,6 @@
                   <label  class="form__label form__label--link" for="phone">Номер телефона:</label>
                   <input class="form__input form__input--tel" type="tel" id="phone" name="phone" placeholder="Номер,пожалуйста">
                 </li>
-              </ul>
-              <ul class="form__list form__list--link">
                 <li class="form__item form__item--link">
                   <label class="form__label form__label--link" for="mail">Адрес почты:</label>
                   <input class="form__input form__input--email" type="email" id="mail" name="mail" placeholder="Введите почту *">
@@ -110,56 +117,61 @@
               </ul>
             </div>
             </fieldset>
+            <div class="form-radio">
             <fieldset class="form__block form__block--radio">
               <legend class="form__legend">С каким приложением путешествовали?</legend>
               <ul class="form__list">
                 <li class="form__item form__item--radio">
-                  <input class="form__input form__input--radio" type="radio" id="ios" name="ios" checked>
+                  <input class="form__input form__input--radio" type="radio" id="ios" name="app" checked>
                   <label class="form__label form__label--radio" for="ios">Pink для iOS</label>
                 </li>
                 <li class="form__item form__item--radio">
-                  <input class="form__input form__input--radio" type="radio" id="android" name="android">
+                  <input class="form__input form__input--radio" type="radio" id="android" name="app">
                   <label class="form__label form__label--radio" for="android">Pink на Android</label>
                 </li>
                 <li class="form__item form__item--radio">
-                  <input class="form__input form__input--radio" type="radio" id="windows" name="windows">
+                  <input class="form__input form__input--radio" type="radio" id="windows" name="app">
                   <label class="form__label form__label--radio" for="windows">Windows Phone</label>
                 </li>
               </ul>
             </fieldset>
+          </div>
+          <div class="form__emotions">
             <fieldset class="form__block form__block--textarea">
-              <legend class="form__legend" for="emotions">Опишите свои эмоции</legend>
+              <legend class="form__legend">Опишите свои эмоции</legend>
               <textarea class="form__textarea" name="emotions" id="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-
+              </fieldset>
               <p class="form__text">
-
                 <button class="form__button" type="submit">Отправить форму
                 </button>
                 <span class="form__span"><br class="form__br">*
-                  <span class="form__obligatory">-обязательные поля</span>
-                </span>
-              </p>
-            </fieldset>
+                  <span class="form__obligatory">-обязательные <b class="form__b">для заполнения</b> поля</span>
+                </p>
+              </span>
+            </div>
           </form>
-      </section>
-    </main>
+        </section>
+      </main>
 
-    <footer class="page-footer">
+      <footer class="page-footer page-footer--form">
       <h2 class="visually-hidden">Ссылки на социальные сети</h2>
       <div class="page-footer__img">
-        <img class="page-footer__glasses" src="http://placehold.it/150x100" alt=""><a href="https://htmlacademy.ru/intensive/adaptive">
-          <img  class="page-footer__pink" src="http://placehold.it/150x100" alt="">
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="page-footer__pink" xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375"><g fill="#283645"><path d="M71.874 18.661c0-.708.58-1.288 1.256-1.288h7.18c5.087 0 8.436 2.704 8.436 7.146v.063c0 4.86-4.057 7.373-8.854 7.373h-5.475v6.825c0 .708-.58 1.287-1.289 1.287-.676 0-1.256-.58-1.256-1.287l.002-20.119zm8.114 10.98c3.734 0 6.182-1.996 6.182-4.959v-.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57v-.002zM93.603 18.5c0-.708.579-1.288 1.255-1.288.709 0 1.288.58 1.288 1.288v20.283a1.29 1.29 0 0 1-1.288 1.287c-.676 0-1.255-.579-1.255-1.287V18.5zM102.744 18.532c0-.676.58-1.256 1.256-1.256h.354c.58 0 .935.29 1.288.74l13.684 17.45V18.468c0-.676.547-1.256 1.256-1.256.676 0 1.225.58 1.225 1.256v20.349c0 .677-.48 1.19-1.158 1.19h-.129c-.548 0-.936-.321-1.318-.772l-13.976-17.867v17.449c0 .677-.547 1.257-1.257 1.257-.676 0-1.223-.58-1.223-1.257V18.532h-.002zM128.173 18.5c0-.708.58-1.288 1.257-1.288.708 0 1.286.58 1.286 1.288v12.331l12.848-13.16c.29-.257.579-.451.998-.451.676 0 1.225.612 1.225 1.256 0 .354-.162.644-.42.901l-7.984 7.92 8.564 10.561c.225.291.354.547.354.936 0 .676-.577 1.288-1.285 1.288-.482 0-.807-.259-1.03-.58l-8.401-10.464-4.863 4.861v4.895a1.29 1.29 0 0 1-1.286 1.288c-.677 0-1.257-.58-1.257-1.288V18.5h-.006z"/></g><path fill="#D22856" d="M60.462 28.016L55.287 6.651C54.926 4.303 52.694 0 46.688 0a1.5 1.5 0 1 0 0 3c4.856 0 5.575 3.729 5.639 4.143l4.767 19.701h-2.073c-.742-5.927-5.802-10.531-11.927-10.531s-11.186 4.604-11.927 10.531h-1.82c-.741-5.927-5.802-10.531-11.927-10.531S6.235 20.917 5.493 26.844H3.42L8.187 7.143C8.25 6.729 8.97 3 13.826 3a1.5 1.5 0 1 0 0-3C7.82 0 5.588 4.303 5.227 6.651L.052 28.016c-.266 1.109.531 1.826 1.426 1.826.012 0 .023.004.036.004h3.982c.741 5.926 5.802 10.53 11.927 10.53s11.185-4.604 11.927-10.53h1.814c.742 5.926 5.802 10.53 11.927 10.53s11.186-4.604 11.927-10.53H59c.012 0 .023-.004.036-.004.895 0 1.692-.717 1.426-1.826zm-34.147 1.828c-.715 4.272-4.421 7.531-8.896 7.531s-8.18-3.259-8.896-7.531c-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.715-4.271 4.421-7.531 8.896-7.531s8.18 3.26 8.896 7.531c.082.489.135.988.135 1.5s-.053 1.011-.135 1.5zm25.675 0c-.716 4.272-4.421 7.531-8.896 7.531-4.475 0-8.181-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.716-4.271 4.421-7.531 8.896-7.531 4.475 0 8.181 3.26 8.896 7.531.082.489.135.988.135 1.5s-.053 1.011-.135 1.5z"/></svg>
         </a>
       </div>
       <div class="page-footer__social">
-        <a class="page-footer__btn page-footer__btn--tv" href="#" aria-label="twitter"><span class="visually-hidden">twitter</span></a>
-        <a class="page-footer__btn page-footer__btn--fb " href="#" aria-label="facebook"><span class="visually-hidden">facebook</span></a>
-        <a class="page-footer__btn page-footer__btn--yo" href="#" aria-label="youtube"><span class="visually-hidden">youtube</span></a>
+        <a class="page-footer__btn page-footer__btn--tv" href="#" aria-label="twitter"><span class="visually-hidden">twitter</span><svg version="1" xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.663"><path fill-rule="#d22856" clip-rule="evenodd" d="M11.283.153c1.736-.485 3.074.263 3.685 1.151.694-.226 1.372-.47 2.072-.691-.004.841-.538 1.478-.883 1.727.704.166 1.343-.48 1.343-.48-.175.976-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.32 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.654 4.769 4.364 8.29 4.528 8.506 2.288 9.461.787 11.283.153z"/></svg>
+        </a>
+        <a class="page-footer__btn page-footer__btn--fb " href="#" aria-label="facebook"><span class="visually-hidden">facebook</span><svg version="1" xmlns="http://www.w3.org/2000/svg" width="8.673" height="18.944"><path d="M6.275 3.357h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.115H0v3.517h1.958v9.312h3.837V9.632h2.857V6.115H5.786c-.021-1.045-.036-2.406.489-2.758z"/></svg>
+        </a>
+        <a class="page-footer__btn page-footer__btn--yo" href="#" aria-label="youtube"><span class="visually-hidden">youtube</span><svg version="1" xmlns="http://www.w3.org/2000/svg" width="14.64" height="13.96"><path d="M1.775 13.78C.799 14.257 0 13.758 0 12.671V1.29C0 .202.799-.295 1.775.181l12.133 5.932c.975.478.975 1.258 0 1.736L1.775 13.78z"/></svg>
+        </a>
       </div>
       <div class="page-footer__list">
         <span class="page-footer__span">Разработано</span>
         <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="http://placehold.it/150x100" alt="">
+          <svg version="1" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"/></svg>
         </a>
       </div>
     </footer>

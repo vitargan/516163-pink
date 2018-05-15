@@ -4,11 +4,13 @@
   display: flex;
   flex-direction: column;
   padding: 0;
+  margin-top: 46px;
 }
 
 .contacts {
   padding: 0;
   margin: 0;
+  margin-left: 5px;
 }
 
 .contacts__text {
@@ -25,6 +27,12 @@
   font-weight: bold;
   color: @contacts__title;
   text-align: center;
+  margin-top: 37px;
+  margin-bottom: 4px;
+}
+
+.contacts__title--write {
+  margin-top: 24px;
 }
 
 .contacts__phone,
@@ -40,6 +48,19 @@
 
 .contacts--list {
   list-style: none;
+  width: 280px;
+}
+
+.contacts__item--address {
+  margin: 0;
+  width: 280px;
+  margin-left: 12px;
+  padding-left: 0;
+}
+
+.contacts__title--address {
+  margin-top: 28px;
+  margin-bottom: 7px;
 }
 
 @media (min-width: @tablet-width) {
@@ -47,7 +68,7 @@
     display: flex;
     flex-direction: column;
     width: 270px;
-    padding-left: 180px;
+    padding-left: 174px;
   }
 
   .contacts__text {
@@ -64,6 +85,14 @@
     margin-right: 40px;
   }
 
+  .contacts__block--write {
+    margin-top: 12px;
+  }
+
+  .contacts__title--write {
+    margin-bottom: 9px;
+  }
+
   .contacts--list {
     display: flex;
     flex-direction: row;
@@ -71,12 +100,24 @@
     min-height: 100px;
     list-style: none;
     margin: 0;
-    margin-left: 30px;
+    padding: 0;
+    margin-left: 35px;
+    margin-top: 12px;
   }
 
   .contacts__item--text {
     width: 450px;
-    padding-left: 90px;
+    padding-left: 102px;
+  }
+
+  .contacts__title--address {
+    margin-top: 16px;
+    margin-bottom: 11px;
+  }
+
+  .contacts__item--address {
+    margin-top: 12px;
+    padding-left: 138px;
   }
 }
 
@@ -91,6 +132,7 @@
     padding: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 72px;
   }
 
   .contacts--wrapper {
@@ -102,5 +144,29 @@
 
   .contacts__item {
     padding: 0;
+  }
+
+  .contacts--list {
+    display: none;
+  }
+
+  .contacts__title {
+    margin-bottom: 28px;
+  }
+
+  .contacts--desktop {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 18px;
+  }
+
+  .contacts__title--address {
+    margin-top: 25px;
+  }
+
+  .contacts__block:nth-child(1) {
+    margin-right: 31px;
   }
 }

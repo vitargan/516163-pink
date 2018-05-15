@@ -1,56 +1,70 @@
 .competition {
   width: @mobail-width;
-  background: @background-competition;
-  border: 2px solid red;
   min-height: 330px;
+  box-sizing: border-box;
 }
 
 .competition__text:nth-child(1) {
-  height: 165px;
+  min-height: 126px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
   text-align: center;
   color: @color-competition__text;
-  background-color: @background-header;
   margin: 0;
   padding-top: 30px;
   box-sizing: border-box;
 }
 
 .competition__text:nth-child(2) {
-  height: 165px;
+  min-height: 159px;
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
   text-align: center;
+  box-sizing: border-box;
   color: @color-competition__text2;
   margin-top: 45px;
+  padding-left: 30px;
+  padding-right: 31px;
+  padding-top: 46px;
+  margin-bottom: 0;
+  background-color: @color-header;
 }
 
 .competition__span {
   display: none;
 }
 
+.competition__wrapper {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.competition__br {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .competition {
     width: @tablet-width;
-    min-height: 550px;
+    min-height: 567px;
   }
 
   .competition__text:nth-child(1) {
-    height: 329px;
+    min-height: 285px;
     font-size: 50px;
     line-height: 60px;
+    padding-top: 72px;
   }
 
   .competition__text:nth-child(2) {
-    height: 235px;
     text-align: center;
     font-size: 18px;
     line-height: 30px;
     padding-left: 70px;
     padding-right: 70px;
+    padding-top: 96px;
+    min-height: 237px;
   }
 
   .competition__span {
@@ -62,23 +76,41 @@
     color: @color-competition__text2;
     white-space: nowrap;
   }
+
+  .competition__br {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .competition {
     width: 100%;
     min-height: 485px;
+    background-image: none;
   }
 
   .competition__text:nth-child(1) {
     height: 284px;
+    padding-top: 61px;
   }
 
   .competition__text:nth-child(2) {
-    height: 200px;
-    width: 730px;
+    min-height: 205px;
+    width: 100%;
     padding: 0;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 93px;
+    margin-top: 0;
+  }
+
+  .competition__br {
+    display: block;
+  }
+
+  .competition__wrapper {
+    background-color: transparent;
+    height: 280px;
   }
 }
