@@ -24,7 +24,7 @@
               <nav class="main-nav">
               <h2 class="visually-hidden">Меню сайта</h2>
               <ul class="main-nav__list site-list">
-                <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+                <li class="site-list__item site-list__item--active"><a class="123">Главная</a></li>
                 <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
                 <li class="site-list__item"><a href="form.html">Конкурс</a></li>
                 <li class="site-list__item"><a href="https://htmlacademy.ru/"><span class="site-list__span">Html</span>  Academy</a></li>
@@ -71,24 +71,32 @@
           <div class="advantages__wrapper">
             <ul class="advantages__list">
               <li class="advantages__item advantages__item--mood">
-                <img src="http://placehold.it/130x238" alt="" class="advantages__mobil">
+               <picture>
+                <img src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x"  alt="" class="advantages__mobil">
+               </picture>
                 <h3 class="advantages__title advantages__title--mood">Поднимает настроение</h3>
                 <p class="advantages__description advantages__description--mood">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               </li>
               <li class="advantages__item advantages__item--world">
-                <img src="http://placehold.it/130x238" alt="" class="advantages__mobil">
+               <picture>
+                <img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="" class="advantages__mobil">
+               </picture>
                 <h3 class="advantages__title advantages__title--world">Меняет мир вокруг</h3>
                 <p class="advantages__description advantages__description--world">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               </li>
               <li class="advantages__item advantages__item--friend">
-                <img src="http://placehold.it/130x238" alt="" class="advantages__mobil">
-                <h3 class="advantages__title">Заводит новых друзей</h3>
+               <picture>
+                <img src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt="" class="advantages__mobil">
+               </picture>
+                <h3 class="advantages__title advantages__title--friend">Заводит новых друзей</h3>
                 <p class="advantages__description advantages__description--friend">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
           </div>
           <div class="advantages__effect">
-            <img class="advantages__img" src="http://placehold.it/150x100" alt="">
+
+            <img class="advantages__img advantages__img--effect" src="img/icon-timer.svg" width="238" height="276" alt="">
+
             <ul class="advantages__research">
               <li class="advantages__item advantages__item--effect">
                 <h3 class="advantages__time">Эффект<br class="advantages__br advantages__br--time"> на 24 часа!</h3>
@@ -245,9 +253,8 @@
               <button class="tariff__button tariff__button--2" type="button"></button>
               <button class="tariff__button tariff__button--3" type="button"></button>
             </p>
-      </section>
-    </main>
-
+          </section>
+      </main>
       <section class="contacts-footer">
       <h2 class="visually-hidden">Контакты</h2>
       <ul class="contacts-footer__list contacts">

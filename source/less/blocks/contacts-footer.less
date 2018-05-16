@@ -5,24 +5,40 @@
   text-align: center;
   padding: 0;
   margin: 0;
+  position: relative;
 }
 
 .contacts-footer__list {
   padding: 0;
 }
 
-.contacts-footer__map {
+.contacts--wrapper {
   position: relative;
+}
+
+.contacts-footer__map {
 
   &::before {
     content: "";
-    background: url("/img/bg-map-mobile@1x.png");
+    background-image: url("../img/bg-map-mobile@1x.png");
     position: absolute;
     background-repeat: no-repeat;
     background-position: 0 -448px;
     width: 320px;
     height: 237px;
-    bottom: -277px;
+    bottom: 6px;
+    left: 0;
+  }
+
+   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    content: "";
+    background-image: url("../img/bg-map-mobile@2x.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 0 -448px;
+    width: 320px;
+    height: 237px;
+    bottom: 0;
     left: 0;
   }
 }
@@ -30,7 +46,7 @@
 @media (min-width: @tablet-width) {
   .contacts-footer {
     width: @tablet-width;
-    min-height: 732px;
+    min-height: 783px;
   }
 
   .contacts-footer__map {
@@ -38,14 +54,26 @@
 
     &::before {
       content: "";
-      background: url("/img/bg-map-mobile@1x.png");
+      background-image: url("../img/bg-map-tablet@1x.jpg");
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: -19px -339px;
+      bottom: 50px;
+      height: 370px;
+      width: @tablet-width;
+      left: 0;
+    }
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      content: "";
+      background-image: url("../img/bg-map-tablet@2x.jpg");
       position: absolute;
       background-repeat: no-repeat;
       background-position: 0 -448px;
-      height: 237px;
-      bottom: 50px;
+      bottom: 0;
       left: 0;
     }
+
   }
 }
 
@@ -53,5 +81,33 @@
   .contacts-footer {
     width: 100%;
     min-height: 800px;
+  }
+
+  .contacts-footer__map {
+    height: 507px;
+
+    &::before {
+      content: "";
+      background-image: url("../img/bg-map-desktop@1x.jpg");
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: -19px -339px;
+      bottom: 0;
+      height: 507px;
+      width: 1200px;
+      left: 199px;
+    }
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      content: "";
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: 0 -448px;
+      background-size: 2560px 850px;
+      bottom: 0;
+      left: 0;
+    }
+
   }
 }

@@ -46,6 +46,20 @@
   margin: 0;
 }
 
+.contacts__mail,
+.contacts__phone {
+  &:hover {
+    color: @contacts__text;
+  }
+}
+
+.contacts__mail,
+.contacts__phone {
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .contacts--list {
   list-style: none;
   width: 280px;

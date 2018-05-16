@@ -48,7 +48,11 @@
       <h2 class="visually-hidden">Фотографии пользователей</h2>
       <section class="photo photo__hit">
         <div class="photo__list photo__list--hit">
-          <img class="photo__img photo__img--hit" src="img/panorama-mobile@1x.jpg" width="280" height="180" alt="">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="photo__img photo__img--hit" src="/img/panorama-mobile@1x.jpg " width="280" height="180" srcset="img/panorama-mobile@2x.jpg 2x" alt="фото дня">
+          </picture>
           <div class="photo__block photo__block--hit">
             <div class="photo__item photo__item--hit">
             <b class="photo__name photo__name--hit">Анна</b>
@@ -56,7 +60,7 @@
           </div>
             <p class="photo__comment photo__comment--hit">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <div class="photo__please photo__please--hit">
-              <img class="photo__like photo__like--hit" src="img/icon-heart.svg" alt="">
+              <img class="photo__like photo__like--hit" src="img/icon-heart.svg" alt="лайк">
               <span class="photo__text photo__text--hit">Нравится: 215</span>
             </div>
           </div>
@@ -65,73 +69,97 @@
       <section class="photo">
         <div class="photo__wrapper photo__wrapper--block">
           <div class="photo__list">
-            <img class="photo__img" src="img/photo-car-mobile@1x.jpg" alt="" width="280" height="180">
+           <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+            <img class="photo__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="фото пользователей" width="280" height="180">
+           </picture>
               <div class="photo__block photo__block--1 ">
                 <b class="photo__name">Левон</b>
                 <span class="photo__span">(5 часов назад)</span>
                 <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                 <div class="photo__please">
-                  <img class="photo__like" src="img/icon-heart.svg" alt="">
+                  <img class="photo__like" src="img/icon-heart.svg" alt="лайк">
                   <span class="photo__text">Нравится: 356</span>
                 </div>
               </div>
             </div>
             <div class="photo__list">
-              <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" alt="" width="280" height="180">
+             <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="фото пользователей" width="280" height="180">
+             </picture>
               <div class="photo__block photo__block--2">
                 <b class="photo__name">Антон</b>
                 <span class="photo__span">(12 часов назад)</span>
                 <p class="photo__comment">Соседи будут рады!</p>
                 <div class="photo__please">
-                  <img class="photo__like" src="img/icon-heart.svg" alt="">
+                  <img class="photo__like" src="img/icon-heart.svg" alt="лайк">
                   <span class="photo__text">Нравится: 666</span>
                 </div>
               </div>
             </div>
             <div class="photo__list">
-              <img class="photo__img" src="img/photo-window-mobile@1x.jpg" alt="" width="280" height="180">
+             <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img class="photo__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="фото пользователей" width="280" height="180">
+             </picture>
               <div class="photo__block photo__block--3">
                 <b class="photo__name">Борис</b>
                 <span class="photo__span">(20 часов назад)</span>
                 <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
                 <div class="photo__please">
-                  <img class="photo__like" src="img/icon-heart.svg" alt="">
+                  <img class="photo__like" src="img/icon-heart.svg" alt="лайк">
                   <span class="photo__text">Нравится: 215</span>
                 </div>
               </div>
             </div>
             <div class="photo__list">
-              <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" alt=""  width="280" height="180">
+             <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="фото пользователей"  width="280" height="180">
+             </picture>
               <div class="photo__block photo__block--4">
                 <b class="photo__name">Сергей</b>
                 <span class="photo__span">(25 часов назад)</span>
                 <p class="photo__comment">Самая кубанская в мире!</p>
                 <div class="photo__please">
-                  <img class="photo__like" src="img/icon-heart.svg" alt="">
+                  <img class="photo__like" src="img/icon-heart.svg" alt="лайк">
                   <span class="photo__text">Нравится: 4</span>
                 </div>
               </div>
             </div>
             <div class="photo__list">
-              <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" alt="" width="280" height="180">
+             <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="фото пользователей" width="280" height="180">
+             </picture>
               <div class="photo__block photo__block--5">
                 <b class="photo__name">Максим</b>
                 <span class="photo__span">(40 часов назад)</span>
                 <p class="photo__comment">Где снег-то?</p>
                 <div class="photo__please">
-                  <img  class="photo__like" src="img/icon-heart.svg" alt="">
+                  <img  class="photo__like" src="img/icon-heart.svg" alt="лайк">
                   <span class="photo__text">Нравится: 150</span>
                 </div>
               </div>
             </div>
             <div class="photo__list">
-              <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" alt="" width="280" height="180">
+             <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@12.jpg 2x">
+              <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="фото пользователей" width="280" height="180">
+             </picture>
               <div class="photo__block photo__block--6">
                 <b class="photo__name">Надежда</b>
                 <span class="photo__span">(45 часов назад)</span>
                 <p class="photo__comment">Всем GM и взаимные лайки!</p>
                 <div class="photo__please">
-                  <img class="photo__like" src="img/icon-heart.svg" alt="">
+                  <img class="photo__like" src="img/icon-heart.svg" alt="лайк">
                   <span class="photo__text">Нравится: 2560</span>
                 </div>
               </div>
@@ -141,7 +169,11 @@
         <section class="sending-photo">
         <p class="sending-photo__text">Затмите их всех!<br>Выкладывайте все, что накопилось в<br class="sending-photo__br"> телефоне!</p>
         <div class="sending-photo__filters">
-          <img class="sending-photo__img" src="img/photo-road-mobile@1x.jpg" alt="" width="280" height="374">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+           <img class="sending-photo__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="фото которое обрабатывается" width="280" height="374">
+          </picture>
             <div class="sending-photo__wrapper">
               <div class="sending-photo__list">
                 <div class="sending-photo__crop  sending-photo__crop--active" ><svg version="1" xmlns="http://www.w3.org/2000/svg" width="48" height="48"><path fill="none" d="M0 0h48v48H0V0z"/><path d="M34 30h4V14c0-2.21-1.79-4-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4H14z"/></svg>
