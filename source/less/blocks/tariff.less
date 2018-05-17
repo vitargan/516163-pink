@@ -1,9 +1,22 @@
 .tariff {
   background: @background-tariff;
-  min-height: 396px;
+  min-height: 440px;
   width: @mobail-width;
   text-align: center;
   box-sizing: border-box;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("../img/bg-triangle-white.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top: -71px;
+    left: 0;
+    position: absolute;
+  }
 }
 
 .tariff__slider {
@@ -57,6 +70,31 @@
   padding-right: 21px;
 }
 
+.tariff__list--hit {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../img/bg-hit-tablet.svg");
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &::after {
+    content: "хит";
+    color: @background-reviews;
+    font-size: 16px;
+    font-weight: bold;
+    transform: rotate(-45deg);
+    left: 4px;
+    top: 14px;
+    position: absolute;
+  }
+}
+
 .tariff__cell path {
   fill: #3dc644;
 }
@@ -73,6 +111,7 @@
   border: none;
   padding: 0;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .tariff__button--2 {
@@ -96,14 +135,18 @@
   margin-top: 33px;
 }
 
-.contacts--desktop {
-  display: none;
+.tariff__wrapper {
+  padding-top: 43px;
 }
 
 @media (min-width: @tablet-width) {
   .tariff {
     width: @tablet-width;
-    min-height: 289px;
+    min-height: 329px;
+
+    &::after {
+      top: -28px;
+    }
   }
 
   .tariff__slider {
@@ -112,6 +155,10 @@
 
   .tariff__toggles {
     display: none;
+  }
+
+  .tariff__wrapper {
+    padding-top: 43px;
   }
 
   .tariff__table__tablet {
@@ -175,7 +222,11 @@
 @media (min-width: @desktop-width) {
   .tariff {
     width: 100%;
-    min-height: 471px;
+    min-height: 541px;
+
+    &::after {
+      top: -28px;
+    }
   }
 
   .tariff__table__tablet {
@@ -183,6 +234,10 @@
     margin: 0;
     margin-top: 40px;
     padding-top: 97px;
+  }
+
+  .tariff__wrapper {
+    padding-top: 49px;
   }
 
   .tariff__tablet {

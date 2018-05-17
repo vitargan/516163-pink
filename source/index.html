@@ -24,7 +24,7 @@
               <nav class="main-nav">
               <h2 class="visually-hidden">Меню сайта</h2>
               <ul class="main-nav__list site-list">
-                <li class="site-list__item site-list__item--active"><a class="123">Главная</a></li>
+                <li class="site-list__item site-list__item--active"><a>Главная</a></li>
                 <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
                 <li class="site-list__item"><a href="form.html">Конкурс</a></li>
                 <li class="site-list__item"><a href="https://htmlacademy.ru/"><span class="site-list__span">Html</span>  Academy</a></li>
@@ -72,21 +72,21 @@
             <ul class="advantages__list">
               <li class="advantages__item advantages__item--mood">
                <picture>
-                <img src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x"  alt="" class="advantages__mobil">
+                <img src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x"  alt="пример фотографий" class="advantages__mobil">
                </picture>
                 <h3 class="advantages__title advantages__title--mood">Поднимает настроение</h3>
                 <p class="advantages__description advantages__description--mood">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               </li>
               <li class="advantages__item advantages__item--world">
                <picture>
-                <img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="" class="advantages__mobil">
+                <img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="пример фотографий" class="advantages__mobil">
                </picture>
                 <h3 class="advantages__title advantages__title--world">Меняет мир вокруг</h3>
                 <p class="advantages__description advantages__description--world">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               </li>
               <li class="advantages__item advantages__item--friend">
                <picture>
-                <img src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt="" class="advantages__mobil">
+                <img src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt="пример фотографий" class="advantages__mobil">
                </picture>
                 <h3 class="advantages__title advantages__title--friend">Заводит новых друзей</h3>
                 <p class="advantages__description advantages__description--friend">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
@@ -95,7 +95,7 @@
           </div>
           <div class="advantages__effect">
 
-            <img class="advantages__img advantages__img--effect" src="img/icon-timer.svg" width="238" height="276" alt="">
+            <img class="advantages__img advantages__img--effect" src="img/icon-timer.svg" width="238" height="276" alt="фото таймера">
 
             <ul class="advantages__research">
               <li class="advantages__item advantages__item--effect">
@@ -131,15 +131,15 @@
           <button class="reviews__button reviews__button--3" type="button"></button>
         </p>
         <p class="reviews__arrow">
-          <button class="reviews__left__arrow" type="button"><</button>
-          <button class="reviews__right__arrow" type="button">></button>
+          <button class="reviews__left__arrow" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="21.706" height="41.719"><path d="M2.045 20.859L21.458 1.446A.847.847 0 0 0 20.261.248L.248 20.261a.846.846 0 0 0 0 1.197l20.013 20.013a.843.843 0 0 0 1.198 0 .847.847 0 0 0 0-1.198L2.045 20.859z"/></svg></button>
+          <button class="reviews__right__arrow" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="21.706" height="41.719"><path d="M19.661 20.859L.248 1.446A.847.847 0 0 1 1.445.248L21.458 20.26c.33.33.33.867 0 1.197L1.445 41.471a.843.843 0 0 1-1.198 0 .847.847 0 0 1 0-1.198l19.414-19.414z"/></svg></button>
         </p>
       </section>
       <section class="tariff">
         <h2 class="visually-hidden">Тарифные планы</h2>
         <div class="tariff__wrapper">
           <div class="tariff__slider">
-            <ul class="tariff__list">
+            <ul class="tariff__list tariff__list--hit">
               <li class="tariff__item">Стандарт</li>
               <li class="tariff__price">3,99 USD</li>
             </ul>
@@ -163,7 +163,7 @@
           </div>
         </div>
           <div class="tariff__slider visually-hidden">
-            <ul class="tariff__list">
+            <ul class="tariff__list tariff__list--hit">
               <li class="tariff__item">Стандарт</li>
               <li class="tariff__price">3,99 USD</li>
             </ul>
@@ -219,7 +219,7 @@
                     <b class="tariff__item">База</b><br>
                     <span class="tariff__price">1,99 USD</span>
                   </th>
-                <th class="tariff__list">
+                <th class="tariff__list tariff__list--hit">
                   <b class="tariff__item">Стандарт</b><br>
                   <span class="tariff__price">3,99 USD</span>
                 </th>
@@ -265,7 +265,7 @@
       </ul>
       <div class="contacts contacts--wrapper">
         <ul class="contacts contacts--list">
-          <li class="contacts__block">
+          <li class="contacts__block contacts__block--phone">
             <h4 class="contacts__title">Звоните:</h4>
             <a href="tel:+7(812)555-66-66" class="contacts__phone">+7 (812) 555-66-66</a>
           </li>
@@ -273,32 +273,16 @@
             <h4 class="contacts__title contacts__title--write">Пишите:</h4>
             <a href="mail@htmlacademy.ru" class="contacts__mail">mail@htmlacademy.ru</a>
           </li>
-        </ul>
-        <ul class="contacts contacts--list">
           <li class="contacts__item contacts__item--address">
             <h4 class="contacts__title contacts__title--address">Приезжайте в гости:</h4>
             <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
           </li>
         </ul>
-        <ul class="contacts contacts--desktop">
-          <li class="contacts__block">
-            <h4 class="contacts__title">Звоните:</h4>
-            <a href="tel:+7(812)555-66-66" class="contacts__phone">+7 (812) 555-66-66</a>
-          </li>
-          <li class="contacts__item contacts__item--address">
-            <h4 class="contacts__title contacts__title--address">Приезжайте в гости:</h4>
-            <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
-          </li>
-        </ul>
-        <ul class="contacts--desktop">
-          <li class="contacts__block contacts__block--write">
-            <h4 class="contacts__title contacts__title--write">Пишите:</h4>
-            <a href="mail@htmlacademy.ru" class="contacts__mail">mail@htmlacademy.ru</a>
-          </li>
-        </ul>
+
       </div>
       <div class="contacts-footer__map">
-      </div>
+        <iframe class="contacts-footer__iframe" src="https://yandex.ru/map-widget/v1/-/CBq8mFabcB" width="320" height="241" frameborder="0"></iframe>
+     </div>
     </section>
 
     <footer class="page-footer page-footer--index">
