@@ -9,6 +9,12 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 260px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-position: -192px 257px;
+    background-size: 705px 465px;
+  }
 }
 
 .form-header__block {
@@ -57,6 +63,11 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.form-header__logo__tablet,
+.form-header__logo__desktop {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .form-header {
     width: @tablet-width;
@@ -64,6 +75,12 @@
     background-image: url("../img/back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 256px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px 729px;
+      background-position: -268px 256px;
+    }
   }
 
   .form-header__block {
@@ -74,6 +91,22 @@
   .form-header__toggle {
     margin-top: 44px;
   }
+
+  .form-header__logo {
+    width: 150px;
+    height: 50px;
+    margin-top: 26px;
+  }
+
+  .form-header__logo__mobile {
+    display: none;
+  }
+
+  .form-header__logo__tablet {
+    display: inline-block;
+    width: 146.3px;
+    height: 40.3px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -82,11 +115,17 @@
     min-height: 600px;
     display: flex;
     flex-direction: column;
-    background-image: url("../img/back-tablet@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: -458px 0;
     background-repeat: no-repeat;
-    background-position: 0 -46px;
     margin-left: auto;
     margin-right: auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px 850px;
+      background-position: -556px 13px;
+    }
   }
 
   .form-header__wrapper {
@@ -107,9 +146,19 @@
     display: none;
   }
 
+  .form-header__logo {
+    margin-left: 10px;
+  }
+
   .form-header__block {
     width: 160px;
     box-shadow: none;
     background: none;
+  }
+
+  .form-header__logo__desktop {
+    display: inline-block;
+    width: 146.3px;
+    height: 40.3px;
   }
 }

@@ -7,6 +7,18 @@
   padding: 0;
   margin: 0;
   position: relative;
+
+  &::before {
+    content: "";
+    background: url("../img/bg-triangle-white-footer.svg") 0 0;
+    width: 160%;
+    background-repeat: no-repeat;
+    height: 115px;
+    position: absolute;
+    bottom: 129px;
+    left: -139px;
+    z-index: 5;
+  }
 }
 
 .contacts-footer__list {
@@ -17,25 +29,13 @@
   height: 241px;
   position: relative;
 
-  &::after {
-    content: "";
-    background: url("../img/bg-triangle-white-footer.svg") -134px 310px;
-    display: block;
-    width: 100%;
-    height: 62px;
-    z-index: 3;
-    position: absolute;
-    left: 0;
-    top: -1px;
-  }
-
   &::before {
     content: "";
     background-image: url("../img/bg-map-mobile@1x.png");
     background-position: 0 -404px;
     background-repeat: no-repeat;
     display: block;
-    width: 320px;
+    width: @mobail-width;
     height: 241px;
     left: 0;
     bottom: 0;
@@ -58,6 +58,15 @@
   .contacts-footer {
     width: @tablet-width;
     min-height: 821px;
+
+    &::before {
+      width: 0%;
+      height: 115px;
+      position: absolute;
+      bottom: 129px;
+      left: -139px;
+      z-index: 5;
+    }
   }
 
   .contacts-footer__map {
@@ -76,7 +85,7 @@
       position: absolute;
       left: 0;
       top: 29px;
-  }
+    }
 
     &::before {
       content: "";
@@ -99,23 +108,36 @@
   }
 
   .contacts-footer__list {
-    padding-top: 40px;
+    padding-top: 45px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts-footer {
     width: 100%;
-    min-height: 800px;
+    min-height: 827px;
   }
 
   .contacts-footer__list {
-    padding-top: 20px;
+    padding-top: 0;
   }
 
   .contacts-footer__map {
     height: 507px;
-    width:  100%;
+    width: 100%;
+
+    &::after {
+      background: url("../img/bg-triangle-white-footer.svg") 18px 0;
+      display: block;
+      background-size: contain;
+      width: 62%;
+      height: 100px;
+      background-repeat: no-repeat;
+      z-index: 3;
+      position: absolute;
+      left: 314px;
+      top: 29px;
+    }
 
     &::before {
       content: "";
@@ -133,7 +155,7 @@
   }
 
   .contacts-footer__iframe {
-    width:  100%;
+    width: 100%;
     height: 507px;
   }
 }

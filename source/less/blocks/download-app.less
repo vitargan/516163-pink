@@ -6,6 +6,15 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+}
+
+.download-app__btn {
+  margin-top: 28px;
+}
+
+
+.download-app__block {
+  padding-top: 396px;
   position: relative;
 
   &::after {
@@ -16,22 +25,13 @@
     width: 258px;
     height: 286px;
     left: 0;
-    bottom: 40.5%;
+    bottom: 252px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/iphone-hand-mobile@1x.png");
       background-size: 260px 286px;
     }
   }
-}
-
-.download-app__btn {
-  margin-top: 28px;
-}
-
-
-.download-app__block {
-  padding-top: 396px;
 }
 
 .download-app__btn a {
@@ -119,6 +119,10 @@
     padding-right: 300px;
     box-sizing: border-box;
     z-index: 1;
+  }
+
+  .download-app__block {
+    padding-top: 54px;
 
     &::after {
       content: "";
@@ -128,7 +132,7 @@
       width: 665px;
       height: 552px;
       left: -21px;
-      bottom: -7px;
+      bottom: -98px;
       z-index: -1;
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -137,10 +141,6 @@
         bottom: 0;
       }
     }
-  }
-
-  .download-app__block {
-    padding-top: 54px;
   }
 
   .download-app__text {
@@ -175,6 +175,12 @@
     background-size: auto 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .download-app__block {
+    width: 1009px;
+    margin-left: auto;
+    margin-right: auto;
 
     &::after {
       content: "";
@@ -183,22 +189,16 @@
       display: block;
       width: 915px;
       height: 645px;
-      left: 297px;
-      bottom: 0;
+      left: 52px;
+      bottom: -53px;
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background-image: url("../img/iphone-hand-desktop@2x.png");
         background-size: 1086px 644px;
-        bottom: 0;
-        left: 255px;
+        bottom: -52px;
+        left: 27px;
       }
     }
-  }
-
-  .download-app__block {
-    width: 1009px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .download-app__slogan {

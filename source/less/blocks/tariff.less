@@ -1,22 +1,14 @@
 .tariff {
   background: @background-tariff;
   min-height: 440px;
-  width: @mobail-width;
   text-align: center;
   box-sizing: border-box;
   position: relative;
-
-  &::after {
-    content: "";
-    background-image: url("../img/bg-triangle-white.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    top: -71px;
-    left: 0;
-    position: absolute;
-  }
+  background-image: url("../img/bg-triangle-white.svg");
+  background-position: 0 -68px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 .tariff__slider {
@@ -143,10 +135,7 @@
   .tariff {
     width: @tablet-width;
     min-height: 329px;
-
-    &::after {
-      top: -28px;
-    }
+    background-position: 0 -47px;
   }
 
   .tariff__slider {
@@ -223,10 +212,8 @@
   .tariff {
     width: 100%;
     min-height: 541px;
-
-    &::after {
-      top: -28px;
-    }
+    background-position: 0 -3px;
+    background-size: contain;
   }
 
   .tariff__table__tablet {
