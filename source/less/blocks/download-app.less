@@ -6,15 +6,17 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 .download-app__btn {
-  margin-top: 28px;
+  margin-top: 29px;
 }
 
-
 .download-app__block {
-  padding-top: 396px;
+  margin-top: 397px;
+  height: 260px;
+  background-color: @background-download-app;
   position: relative;
 
   &::after {
@@ -25,11 +27,12 @@
     width: 258px;
     height: 286px;
     left: 0;
-    bottom: 252px;
+    bottom: 261px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/iphone-hand-mobile@1x.png");
       background-size: 260px 286px;
+      bottom: 260px;
     }
   }
 }
@@ -47,6 +50,7 @@
   height: 52px;
   box-sizing: border-box;
   display: block;
+
 
   &:hover {
     color: @color-footer;
@@ -119,10 +123,13 @@
     padding-right: 300px;
     box-sizing: border-box;
     z-index: 1;
+    position: relative;
   }
 
   .download-app__block {
     padding-top: 54px;
+    margin-top: 0;
+    background-color: transparent;
 
     &::after {
       content: "";
@@ -132,13 +139,13 @@
       width: 665px;
       height: 552px;
       left: -21px;
-      bottom: -98px;
+      bottom: -312px;
       z-index: -1;
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background-image: url("../img/iphone-hand-tablet@2x.png");
         background-size: 700px 552px;
-        bottom: 0;
+        bottom: -302px;
       }
     }
   }
@@ -173,14 +180,10 @@
     min-height: 740px;
     flex-direction: column;
     background-size: auto 100%;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .download-app__block {
     width: 1009px;
-    margin-left: auto;
-    margin-right: auto;
 
     &::after {
       content: "";
@@ -189,8 +192,8 @@
       display: block;
       width: 915px;
       height: 645px;
-      left: 52px;
-      bottom: -53px;
+      left: 29px;
+      bottom: -425px;
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background-image: url("../img/iphone-hand-desktop@2x.png");
@@ -203,7 +206,7 @@
 
   .download-app__slogan {
     display: block;
-    width: 370px;
+    width: 320px;
     font-size: 50px;
     line-height: 60px;
     font-weight: 300;
@@ -213,12 +216,11 @@
   .download-app__market {
     width: 370px;
     margin-top: 66px;
-    margin-left: 23px;
+    margin-left: 0;
   }
 
   .download-app__btn {
     width: 370px;
-    margin-left: 14px;
   }
 
   .download-app__btn a {

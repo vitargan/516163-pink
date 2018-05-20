@@ -1,5 +1,5 @@
 .sending-photo {
-  width: @mobail-width;
+  width: 100%;
   min-height: 907px;
   box-sizing: border-box;
   display: flex;
@@ -227,6 +227,7 @@
   font-weight: bold;
   margin-top: 11px;
   margin-left: 17px;
+  cursor: pointer;
 
   &:hover {
     background-color: @color-footer;
@@ -249,6 +250,7 @@
   font-weight: bold;
   margin-top: 17px;
   margin-left: 17px;
+  cursor: pointer;
 
   &:hover {
     border: 3px solid @sending-icon-hover;
@@ -263,7 +265,7 @@
 
 @media (min-width: @tablet-width) {
   .sending-photo {
-    width: @tablet-width;
+    width: 100%;
     background: @background-sending;
     min-height: 650px;
     margin-left: auto;
@@ -286,6 +288,11 @@
     padding-top: 58px;
     padding-left: 20px;
     box-sizing: border-box;
+  }
+
+  .sending-photo__wrap {
+    display: flex;
+    flex-direction: row;
   }
 
   .sending-photo__list {
