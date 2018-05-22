@@ -37,10 +37,6 @@
   background-color: @background-header;
 }
 
-.page-header__close {
-  transform: translate(26px);
-}
-
 .page-header__toggle path:hover {
   fill: @hover;
 }
@@ -58,7 +54,6 @@
   width: 50px;
   height: 24px;
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .page-header__logo {
@@ -82,8 +77,8 @@
   fill: @color-header;
 }
 
-.page-header__wrapper {
-  background-color: rgba(0, 0, 0, 0.2);
+.page-header__close {
+  transform: translate(26px);
 }
 
 .page-header__logo__tablet,
@@ -170,6 +165,12 @@
 
   .page-header__logo {
     margin-left: 10px;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .page-header__block {
