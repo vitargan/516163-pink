@@ -1,9 +1,14 @@
 .tariff {
   background: @background-tariff;
-  min-height: 396px;
-  width: @mobail-width;
+  min-height: 440px;
   text-align: center;
   box-sizing: border-box;
+  position: relative;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-position: 0 -68px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 .tariff__slider {
@@ -57,6 +62,31 @@
   padding-right: 21px;
 }
 
+.tariff__list--hit {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../img/bg-hit-tablet.svg");
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &::after {
+    content: "хит";
+    color: @background-reviews;
+    font-size: 16px;
+    font-weight: bold;
+    transform: rotate(-45deg);
+    left: 4px;
+    top: 14px;
+    position: absolute;
+  }
+}
+
 .tariff__cell path {
   fill: #3dc644;
 }
@@ -73,6 +103,7 @@
   border: none;
   padding: 0;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .tariff__button--2 {
@@ -96,14 +127,15 @@
   margin-top: 33px;
 }
 
-.contacts--desktop {
-  display: none;
+.tariff__wrapper {
+  padding-top: 43px;
 }
 
 @media (min-width: @tablet-width) {
   .tariff {
-    width: @tablet-width;
-    min-height: 289px;
+    width: 100%;
+    min-height: 329px;
+    background-position: 0 -47px;
   }
 
   .tariff__slider {
@@ -112,6 +144,10 @@
 
   .tariff__toggles {
     display: none;
+  }
+
+  .tariff__wrapper {
+    padding-top: 43px;
   }
 
   .tariff__table__tablet {
@@ -123,15 +159,11 @@
 
   .tariff__list {
     height: 78px;
-    width: 156px;
+    width: 153px;
     border: none;
     border-right: 1px solid #f2f2f2;
     padding-top: 10px;
     border-collapse: collapse;
-  }
-
-  .tariff__list:first-child {
-    margin-left: 161px;
   }
 
   .tariff__item {
@@ -146,6 +178,7 @@
     display: flex;
     width: 620px;
     text-align: center;
+    justify-content: flex-end;
   }
 
   .tariff__cell {
@@ -175,14 +208,20 @@
 @media (min-width: @desktop-width) {
   .tariff {
     width: 100%;
-    min-height: 440px;
+    min-height: 528px;
+    background-position: 0 -3px;
+    background-size: contain;
   }
 
   .tariff__table__tablet {
     display: block;
     margin: 0;
     margin-top: 40px;
-    padding-top: 68px;
+    padding-top: 97px;
+  }
+
+  .tariff__wrapper {
+    padding-top: 37px;
   }
 
   .tariff__tablet {
@@ -193,7 +232,7 @@
 
   .tariff__list {
     height: 95px;
-    width: 235px;
+    width: 234px;
     padding-top: 16px;
   }
 
@@ -216,9 +255,5 @@
     font-size: 24px;
     line-height: 30px;
     font-weight: 300;
-  }
-
-  .tariff__list:first-child {
-    margin-left: 237px;
   }
 }

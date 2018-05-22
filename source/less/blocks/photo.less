@@ -1,5 +1,5 @@
 .photo {
-  width: @mobail-width;
+  width: 100%;
   min-height: 1944px;
   background: @background-photo;
   margin: 0;
@@ -80,6 +80,7 @@
 .photo__like {
   padding-left: 15px;
   margin-right: 17px;
+  cursor: pointer;
 }
 
 .photo__text {
@@ -115,6 +116,21 @@
 
 .photo__list--hit {
   margin-bottom: 17px;
+  position: relative;
+
+  &::before {
+    content: "панорама дня";
+    position: absolute;
+    width: 140px;
+    height: 36px;
+    background-color: @color-footer;
+    font-size: 16px;
+    font-weight: bold;
+    color: @background-reviews;
+    line-height: 31px;
+    right: 21px;
+    text-align: center;
+  }
 }
 
 .photo__comment--hit {
@@ -132,7 +148,7 @@
 
 @media (min-width: @tablet-width) {
   .photo {
-    width: @tablet-width;
+    width: 100%;
     min-height: 1448px;
   }
 
@@ -185,6 +201,10 @@
   .photo__list--hit {
     min-height: 631px;
     width: 660px;
+
+    &::before {
+      top: 58px;
+    }
   }
 
   .photo__block--hit {
@@ -286,6 +306,11 @@
     min-height: 604px;
     width: 100%;
     margin-bottom: 29px;
+
+    &::before {
+      top: 52px;
+      right: 361px;
+    }
   }
 
   .photo__block--hit {

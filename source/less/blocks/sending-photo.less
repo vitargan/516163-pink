@@ -1,5 +1,5 @@
 .sending-photo {
-  width: @mobail-width;
+  width: 100%;
   min-height: 907px;
   box-sizing: border-box;
   display: flex;
@@ -60,6 +60,7 @@
 .sending-photo__crop {
   margin-right: 30px;
   fill: @sending-icon;
+  cursor: pointer;
 
   &:hover {
     fill: @sending-icon-hover;
@@ -72,11 +73,13 @@
 
 .sending-photo__crop--active {
   fill: @color-footer;
+  cursor: pointer;
 }
 
 .sending-photo__fill {
   margin-right: 41px;
   fill: @sending-icon;
+  cursor: pointer;
 
   &:hover {
     fill: @sending-icon-hover;
@@ -90,6 +93,7 @@
 .sending-photo__contrast {
   margin-top: 8px;
   fill: @sending-icon;
+  cursor: pointer;
 
   &:hover {
     fill: @sending-icon-hover;
@@ -116,6 +120,7 @@
   height: 50px;
   width: 280px;
   position: relative;
+  cursor: pointer;
 }
 
 .sending-photo__scale--crop {
@@ -222,6 +227,7 @@
   font-weight: bold;
   margin-top: 11px;
   margin-left: 17px;
+  cursor: pointer;
 
   &:hover {
     background-color: @color-footer;
@@ -244,6 +250,7 @@
   font-weight: bold;
   margin-top: 17px;
   margin-left: 17px;
+  cursor: pointer;
 
   &:hover {
     border: 3px solid @sending-icon-hover;
@@ -258,9 +265,9 @@
 
 @media (min-width: @tablet-width) {
   .sending-photo {
-    width: @tablet-width;
+    width: 100%;
     background: @background-sending;
-    min-height: 663px;
+    min-height: 650px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -281,6 +288,11 @@
     padding-top: 58px;
     padding-left: 20px;
     box-sizing: border-box;
+  }
+
+  .sending-photo__wrap {
+    display: flex;
+    flex-direction: row;
   }
 
   .sending-photo__list {
@@ -307,6 +319,21 @@
     padding: 0;
   }
 
+  .sending-photo__crop svg {
+    transform: scale(0.5);
+  }
+
+  .sending-photo__fill svg {
+    transform: scale(0.5);
+    padding-top: 17px;
+  }
+
+  .sending-photo__contrast svg {
+    transform: scale(0.5);
+    padding-top: 25px;
+    padding-left: 13px;
+  }
+
   .sending-photo__battons {
     margin: 0;
   }
@@ -315,6 +342,7 @@
     height: 55px;
     width: 275px;
     margin: 0;
+    box-sizing: border-box;
     border-bottom: 1px solid @button-cancellation;
   }
 
@@ -352,13 +380,13 @@
   .sending-photo__scale--crop {
     border: 1px solid @contacts__title;
     position: absolute;
-    top: -181px;
+    top: -175px;
     left: 63px;
     width: 200px;
   }
 
   .sending-photo__toggle--crop {
-    top: -188px;
+    top: -182px;
     left: 208px;
     background-color: @background-sending;
 
@@ -395,6 +423,11 @@
     width: 200px;
   }
 
+  .sending-photo__fill--active,
+  .sending-photo__contrast--active path {
+    fill: @color-footer;
+  }
+
   .sending-photo__toggle--contrast {
     top: -45px;
     left: 158px;
@@ -410,6 +443,7 @@
 @media (min-width: @desktop-width) {
   .sending-photo {
     width: 940px;
+    min-height: 756px;
     background: @background-footer;
   }
 
@@ -432,6 +466,10 @@
     margin-left: 90px;
   }
 
+  .sending-photo__list {
+    margin-left: 0;
+  }
+
   .sending-photo__battons {
     flex-direction: row;
     margin-top: 84px;
@@ -449,22 +487,37 @@
     width: 400px;
   }
 
+  .sending-photo__crop svg {
+    transform: scale(1);
+  }
+
+  .sending-photo__fill svg {
+    transform: scale(1);
+    padding-top: 17px;
+  }
+
+  .sending-photo__contrast svg {
+    transform: scale(1);
+    padding-top: 25px;
+    padding-left: 13px;
+  }
+
   .sending-photo__scale--crop {
     border: 1px solid @contacts__title;
     position: absolute;
     top: -176px;
-    left: 78px;
+    left: 94px;
     width: 286px;
   }
 
   .sending-photo__toggle--crop {
     top: -183px;
-    left: 145px;
+    left: 164px;
     background-color: @background-sending;
 
     &:active {
       top: -183px;
-      left: 145px;
+      left: 164px;
     }
   }
 
@@ -472,18 +525,18 @@
     border: 1px solid @contacts__title;
     position: absolute;
     top: -103px;
-    left: 75px;
+    left: 94px;
     width: 288px;
   }
 
   .sending-photo__toggle--fill {
     top: -110px;
-    left: 321px;
+    left: 339px;
     background-color: @background-sending;
 
     &:active {
       top: -110px;
-      left: 321px;
+      left: 339px;
     }
   }
 
@@ -491,18 +544,18 @@
     border: 1px solid @contacts__title;
     position: absolute;
     top: -33px;
-    left: 74px;
+    left: 94px;
     width: 288px;
   }
 
   .sending-photo__toggle--contrast {
     top: -40px;
-    left: 234px;
+    left: 252px;
     background-color: @background-sending;
 
     &:active {
       top: -40px;
-      left: 234px;
+      left: 252px;
     }
   }
 
