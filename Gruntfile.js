@@ -53,5 +53,42 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask("serve", ["browserSync", "watch"]);
+  grunt.registerTask("serve", ["browserSync", "watch" ]);
 };
+
+module.exports = function (grunt) {
+
+require("load-grunt-tasks")(grunt);
+
+grunt.initConfig({
+  csso: {
+    style: {
+      options: {
+        report: "gzip"
+      },
+      files: {
+        "sourse/css/style.min.css" : ["source/css/style.css"]
+      }
+    }
+  }
+
+imagemin: {
+    images: {
+      options: {
+        optimizationLevel: 3,
+        progressive: true
+      },
+      files: [{
+        expand: true,
+        src ["source/img/../*.{png,jpg,svg}"]
+      }]
+     }
+    }
+  });
+};
+
+grunt.registerTask("csso", "images" [
+    "csso"
+    "images"
+]);
+
