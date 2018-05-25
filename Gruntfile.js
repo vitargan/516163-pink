@@ -60,7 +60,7 @@ module.exports = function(grunt) {
         report: "gzip"
       },
       files: {
-        "build/css/style.min.css" : ["source/css/style.css"]
+        "build/css/style.min.css" : ["build/css/style.css"]
       }
     }
   },
@@ -102,7 +102,7 @@ module.exports = function(grunt) {
           src: [
             "fonts//*.{woff,woff2}",
             "img/",
-            "js/",
+            "js/*.js",
             "*.html"
           ],
           dest: "build"
@@ -133,6 +133,5 @@ module.exports = function(grunt) {
     "csso",
     "imagemin",
     "cwebp",
-    "posthtml"
     ]);
 };
