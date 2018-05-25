@@ -45,6 +45,7 @@ module.exports = function(grunt) {
       html: {
         files: ["source/*.html"],
         tasks: ["posthtml"]
+
       },
 
       style: {
@@ -112,6 +113,15 @@ module.exports = function(grunt) {
     clean: {
     build: ["build"]
   },
+    posthtml: {
+    options: {
+      use: [
+        require("posthtml-include")()
+      ]
+    }
+  }
+
+
 });
 
   grunt.registerTask("serve", ["browserSync", "watch" ]);
@@ -122,6 +132,7 @@ module.exports = function(grunt) {
     "postcss",
     "csso",
     "imagemin",
-    "cwebp"
+    "cwebp",
+    "posthtml"
     ]);
 };
