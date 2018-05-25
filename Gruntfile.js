@@ -1,11 +1,7 @@
 "use strict";
 
 module.exports = function(grunt) {
-  grunt.loadNpmTasks("grunt-contrib-less");
-  grunt.loadNpmTasks("grunt-browser-sync");
-  grunt.loadNpmTasks("grunt-contrib-watch");
-  grunt.loadNpmTasks("grunt-postcss");
-
+  require("load-grunt-tasks")(grunt);
   grunt.initConfig({
     less: {
       style: {
@@ -22,7 +18,7 @@ module.exports = function(grunt) {
             require("autoprefixer")()
           ]
         },
-        src: "source/css/*.css"
+        src: "build/css/*.css"
       }
     },
 
@@ -30,12 +26,12 @@ module.exports = function(grunt) {
       server: {
         bsFiles: {
           src: [
-            "source/*.html",
-            "source/css/*.css"
+            "build/*.html",
+            "build/css/*.css"
           ]
         },
         options: {
-          server: "source/",
+          server: "build/",
           watchTask: true,
           notify: false,
           open: true,
@@ -46,33 +42,29 @@ module.exports = function(grunt) {
     },
 
     watch: {
+      html: {
+        files: ["source/*.html"],
+        tasks: ["posthtml"]
+      },
+
       style: {
         files: ["source/less/**/*.less"],
-        tasks: ["less", "postcss"]
+        tasks: ["less", "postcss", "csso"]
       }
-    }
-  });
+    },
 
-  grunt.registerTask("serve", ["browserSync", "watch" ]);
-};
-
-module.exports = function (grunt) {
-
-require("load-grunt-tasks")(grunt);
-
-grunt.initConfig({
-  csso: {
+    csso: {
     style: {
       options: {
         report: "gzip"
       },
       files: {
-        "sourse/css/style.min.css" : ["source/css/style.css"]
+        "build/css/style.min.css" : ["source/css/style.css"]
       }
     }
-  }
+  },
 
-imagemin: {
+  imagemin: {
     images: {
       options: {
         optimizationLevel: 3,
@@ -80,15 +72,75 @@ imagemin: {
       },
       files: [{
         expand: true,
-        src ["source/img/../*.{png,jpg,svg}"]
+        cwd: 'source/img/',
+        src: ["**/*.{png,jpg,svg}"],
+        dest: "build/img/"
       }]
      }
+    },
+
+    cwebp: {
+    images: {
+      options: {
+        q: 90
+      },
+      files: [{
+        expand: true,
+        cwd: 'source/img/',
+        src: ["**/*.{png,jpg}"],
+        dest: "build/img/"
+      }]
     }
-  });
+  },
+
+  copy: {
+      build: {
+        files: [{
+          expand: true,
+          cwd: "source",
+          src: [
+            "fonts//*.{woff,woff2}",
+            "img/",
+            "js/"
+          ],
+          dest: "build"
+        }]
+      }
+    },
+
+    clean: {
+    build: ["build"]
+  },
+
+  posthtml: {
+    options: {
+      use: [
+        require("posthtml-include")()
+      ]
+    },
+
+html: {
+      files: [{
+        expand: true,
+        dot: true,
+        cwd: "source/",
+        src: ["*.html"],
+        dest: "build"
+      }]
+    }
+  },
+});
+
+  grunt.registerTask("serve", ["browserSync", "watch" ]);
+  grunt.registerTask("build",  [
+    "clean",
+    "copy",
+    "less",
+    "postcss",
+    "csso",
+    "imagemin",
+    "cwebp",
+    "posthtml",
+    "html"
+    ]);
 };
-
-grunt.registerTask("csso", "images" [
-    "csso"
-    "images"
-]);
-
