@@ -101,7 +101,8 @@ module.exports = function(grunt) {
           src: [
             "fonts//*.{woff,woff2}",
             "img/",
-            "js/"
+            "js/",
+            "*.html"
           ],
           dest: "build"
         }]
@@ -110,24 +111,6 @@ module.exports = function(grunt) {
 
     clean: {
     build: ["build"]
-  },
-
-  posthtml: {
-    options: {
-      use: [
-        require("posthtml-include")()
-      ]
-    },
-
-html: {
-      files: [{
-        expand: true,
-        dot: true,
-        cwd: "source/",
-        src: ["*.html"],
-        dest: "build"
-      }]
-    }
   },
 });
 
@@ -139,8 +122,6 @@ html: {
     "postcss",
     "csso",
     "imagemin",
-    "cwebp",
-    "posthtml",
-    "html"
+    "cwebp"
     ]);
 };
