@@ -5,6 +5,9 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -12,7 +15,7 @@
       <div class="page-header__wrapper">
         <div class="wrapper">
           <div class="page-header__list">
-            <div class="page-header__block пвапрв">
+            <div class="page-header__block">
               <a class="page-header__logo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375"><g class="page-header__logo-mobile" fill="#FFF"> <path d="M0 1.449C0 .741.58.161 1.256.161h7.18c5.087 0 8.436 2.704 8.436 7.147v.064c0 4.861-4.057 7.373-8.854 7.373H2.544v6.825c0 .708-.58 1.288-1.288 1.288C.58 22.859 0 22.279 0 21.571V1.449zm8.114 10.979c3.734 0 6.182-1.996 6.182-4.958v-.065c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917h5.57zM21.729 1.288C21.729.58 22.308 0 22.983 0c.709 0 1.288.58 1.288 1.288v20.283c0 .708-.579 1.288-1.288 1.288-.676 0-1.255-.58-1.255-1.288V1.288zM30.87 1.32c0-.676.579-1.256 1.256-1.256h.354c.58 0 .934.29 1.288.74l13.684 17.45V1.256A1.256 1.256 0 0 1 48.707 0c.676 0 1.223.58 1.223 1.256v20.348c0 .676-.482 1.191-1.158 1.191h-.129c-.548 0-.934-.322-1.32-.772L33.349 4.153v17.45c0 .676-.547 1.256-1.255 1.256-.677 0-1.224-.58-1.224-1.256V1.32zM56.3 1.288C56.3.58 56.879 0 57.556 0c.708 0 1.287.58 1.287 1.288v12.331L71.689.451c.29-.258.58-.451.999-.451.676 0 1.224.612 1.224 1.256 0 .354-.161.644-.419.901l-7.984 7.92 8.564 10.561c.225.29.354.547.354.934 0 .676-.579 1.288-1.287 1.288-.483 0-.806-.258-1.03-.58l-8.403-10.463-4.862 4.861v4.894c0 .708-.579 1.288-1.287 1.288-.677 0-1.256-.58-1.256-1.288V1.288z"/></g>
 
@@ -85,21 +88,24 @@
             <ul class="advantages__list">
               <li class="advantages__item advantages__item--mood">
                 <picture>
-                <img src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x"  alt="пример фотографий" class="advantages__mobil">
+                  <source type="image/webp" srcset="img/iphone-screen-1-desktop@1x.webp, img/iphone-screen-1-desktop@2x.webp 2x">
+                    <img src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x"  alt="пример фотографий" class="advantages__mobil">
                 </picture>
                 <h3 class="advantages__title advantages__title--mood">Поднимает настроение</h3>
                 <p class="advantages__description advantages__description--mood">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               </li>
               <li class="advantages__item advantages__item--world">
                 <picture>
-                <img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="пример фотографий" class="advantages__mobil">
+                  <source type="image/webp" srcset="img/iphone-screen-2-desktop@1x.webp, img/iphone-screen-2-desktop@2x.webp 2x">
+                    <img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="пример фотографий" class="advantages__mobil">
                 </picture>
                 <h3 class="advantages__title advantages__title--world">Меняет мир вокруг</h3>
                 <p class="advantages__description advantages__description--world">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               </li>
               <li class="advantages__item advantages__item--friend">
                 <picture>
-                <img src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt="пример фотографий" class="advantages__mobil">
+                  <source type="image/webp" srcset="img/iphone-screen-3-desktop@1x.webp, img/iphone-screen-3-desktop@2x.webp 2x">
+                    <img src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt="пример фотографий" class="advantages__mobil">
                 </picture>
                 <h3 class="advantages__title advantages__title--friend">Заводит новых друзей</h3>
                 <p class="advantages__description advantages__description--friend">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
@@ -158,78 +164,7 @@
         <h2 class="visually-hidden">Тарифные планы</h2>
         <div class="tariff__wrapper">
           <div class="tariff__slider">
-            <ul class="tariff__list tariff__list--hit">
-              <li class="tariff__item">Стандарт</li>
-              <li class="tariff__price">3,99 USD</li>
-            </ul>
-
             <table class="tariff__table">
-              <tr class="tariff__line">
-                <td class="tariff__cell">Розовый фильтр
-                  <svg  xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg>
-                </td>
-              </tr>
-
-              <tr class="tariff__line">
-                <td class="tariff__cell">Смайлики
-                  <svg  xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg>
-                </td>
-              </tr>
-              <tr class="tariff__line">
-                <td class="tariff__cell">Комментарии
-                  <svg class="tariff__svg tariff__svg--no" xmlns="http://www.w3.org/2000/svg" width="27" height="26"><path d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/></svg>
-                </td>
-              </tr>
-
-            </table>
-            <ul class="tariff__list tariff__list--hit visually-hidden">
-              <li class="tariff__item">Стандарт</li>
-              <li class="tariff__price">3,99 USD</li>
-            </ul>
-            <table class="tariff__table visually-hidden">
-              <tr class="tariff__line">
-                <td class="tariff__cell">Розовый фильтр
-                  <svg  xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg>
-                </td>
-              </tr>
-              <tr class="tariff__line">
-                <td class="tariff__cell">Смайлики
-                  <svg  xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg>
-                </td>
-              </tr>
-              <tr class="tariff__line">
-                <td class="tariff__cell">Комментарии
-                  <svg class="tariff__svg tariff__svg--no" xmlns="http://www.w3.org/2000/svg" width="27" height="26"><path d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/></svg>
-                </td>
-              </tr>
-
-            </table>
-            <ul class="tariff__list tariff__list--hit visually-hidden">
-              <li class="tariff__item">Стандарт</li>
-              <li class="tariff__price">3,99 USD</li>
-            </ul>
-            <table class="tariff__table visually-hidden">
-              <tr class="tariff__line">
-                <td class="tariff__cell">Розовый фильтр
-                  <svg  xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg>
-                </td>
-              </tr>
-              <tr class="tariff__line">
-                <td class="tariff__cell">Смайлики
-                  <svg  xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg>
-                </td>
-              </tr>
-              <tr class="tariff__line">
-                <td class="tariff__cell">Комментарии
-                  <svg class="tariff__svg tariff__svg--no" xmlns="http://www.w3.org/2000/svg" width="27" height="26"><path d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/></svg>
-                </td>
-              </tr>
-
-            </table>
-          </div>
-        </div>
-        <div class="tariff__tablet">
-              <table class="tariff__table__tablet">
                 <tr class="tariff__line">
                   <th class="tariff__list">
                     <b class="tariff__item">База</b><br>
@@ -247,30 +182,32 @@
                 <tr class="tariff__line">
                   <td class="tariff__cell">Розовый фильтр</td>
                   <td class="tariff__cell"><svg  xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg></td>
-                  <td class="tariff__cell"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg></td>
+                  <td class="tariff__cell"><span class="tariff__span">розовый фильтр</span><svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg></td>
                   <td class="tariff__cell"><svg  xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg></td>
                 </tr>
                 <tr class="tariff__line">
                   <td class="tariff__cell">Смайлики</td>
                   <td class="tariff__cell"><svg class="tariff__svg tariff__svg--no" xmlns="http://www.w3.org/2000/svg" width="27" height="26"><path d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/></svg></td>
-                  <td class="tariff__cell"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg></td>
+                  <td class="tariff__cell"><span class="tariff__span">смайлики</span><svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg></td>
                   <td class="tariff__cell"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg></td>
                 </tr>
                   <tr class="tariff__line">
                   <td class="tariff__cell">Комментарии</td>
                   <td class="tariff__cell"><svg class="tariff__svg tariff__svg--no" xmlns="http://www.w3.org/2000/svg" width="27" height="26"><path d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/></svg></td>
-                  <td class="tariff__cell"><svg class="tariff__svg tariff__svg--no" xmlns="http://www.w3.org/2000/svg" width="27" height="26"><path d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/></svg></td>
+                  <td class="tariff__cell"><span class="tariff__span">комментарии</span><svg class="tariff__svg tariff__svg--no" xmlns="http://www.w3.org/2000/svg" width="27" height="26"><path d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/></svg></td>
                   <td class="tariff__cell"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09"><path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/></svg></td>
                 </tr>
               </table>
             </div>
-            <p class="tariff__toggles">
-              <button class="tariff__button tariff__button--1" type="button"></button>
-              <button class="tariff__button tariff__button--2" type="button"></button>
-              <button class="tariff__button tariff__button--3" type="button"></button>
-            </p>
           </div>
-          </section>
+        </div>
+          <p class="tariff__toggles">
+            <button class="tariff__button tariff__button--1" type="button"></button>
+            <button class="tariff__button tariff__button--2" type="button"></button>
+            <button class="tariff__button tariff__button--3" type="button"></button>
+          </p>
+
+        </section>
       </main>
       <section class="contacts-footer">
       <div class="wrapper">
